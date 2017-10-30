@@ -189,57 +189,151 @@
 					<div class="vspacer10"></div>
 
 					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<!-- ======== control of large tabs start =========-->
+							<div class="ux-large-tab">
+								<h6>How would you like to identify the bank where the account is held?</h6>
+								<div class="tab-container">
+									<div class="uxd-tabswitch">
+										<ul class="lst-uxd-tabswitch">
+											<li>
+												<a href="javascript:;" class="tab-selected" id="tabbtn-swift-bic">
+												Use SWIFT/BIC
+													<p>Text not visible</p>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:;" id="tabbtn-uk-sortcode">Use UK Sort Code
+													<p>Functional Clearing Code</p>
+												</a>
+											</li>
+										</ul><!--.lst-uxd-tabswitch-->
+										<div class="vgap10"></div><!--.vgap10-->
+								
+										<div class="uxd-tabcontent">
+											<div id="tabcontent-swift-bic">
+												<div class="reports-data">
+													<div class="row">
+														<div class="col-sm-12">
+															This is Swift bic code section
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+															</p>
+														</div><!--.col-xs-12-->
+													</div><!--.row-->
+												</div><!--.reports-data-->
+											</div><!--#tabcontent-encryption-->
+											<div id="tabcontent-uk-sortcode" style="display:none;">
+												<div class="reports-data">
+													<div class="row">
+														<div class="col-sm-12">
+															This is UK sort code section
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+															</p>
+														</div><!--.col-xs-12-->
+													</div><!--.row-->
+												</div><!--.reports-data-->
+											</div><!--#tabcontent-decryption-->
+										</div><!--.uxd-tabcontent-->
+									</div><!--.uxd-tabswitch-->
+								</div> <!-- .tab-container -->
+							</div>
+							<!-- ======== control of large tabs end ===========-->
+						</div> <!-- col-md-12 col-sm-12 -->
+					</div>
+
+					<div class="vspacer10"></div>
+
+					<div class="row">
 					<div class="col-md-12 col-sm-12">
-						<!-- ======== control of large tabs start =========-->
-						<div class="ux-large-tab">
-							<h6>How would you like to identify the bank where the account is held?</h6>
-							<div class="tab-container">
-								<div class="uxd-tabswitch">
-									<ul class="lst-uxd-tabswitch">
-										<li>
-											<a href="javascript:;" class="tab-selected" id="tabbtn-swift-bic">
-											Use SWIFT/BIC
-												<p>Text not visible</p>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:;" id="tabbtn-uk-sortcode">Use UK Sort Code
-												<p>Functional Clearing Code</p>
-											</a>
-										</li>
-									</ul><!--.lst-uxd-tabswitch-->
-									<div class="vgap10"></div><!--.vgap10-->
-							
-									<div class="uxd-tabcontent">
-										<div id="tabcontent-swift-bic">
-											<div class="reports-data">
-												<div class="row">
-													<div class="col-sm-12">
-														This is Swift bic code section
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-														tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-														</p>
-													</div><!--.col-xs-12-->
-												</div><!--.row-->
-											</div><!--.reports-data-->
-										</div><!--#tabcontent-encryption-->
-										<div id="tabcontent-uk-sortcode" style="display:none;">
-											<div class="reports-data">
-												<div class="row">
-													<div class="col-sm-12">
-														This is UK sort code section
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-														tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-														</p>
-													</div><!--.col-xs-12-->
-												</div><!--.row-->
-											</div><!--.reports-data-->
-										</div><!--#tabcontent-decryption-->
-									</div><!--.uxd-tabcontent-->
-								</div><!--.uxd-tabswitch-->
-							</div> <!-- .tab-container -->
+						<!-- sort code start -->
+						<div class="ux-component">
+							<a href="javascript:;" data-toggle="modal" data-target="#Modal-sortcode">
+								<div class="ux-selection ux-comp-box ux-comp-selected">
+									<span>Sort Code</span>
+									<em class="entered-data">Select/ Enter Sort Code</em>
+								</div><!--.ux-selection-->
+							</a>
 						</div>
-						<!-- ======== control of large tabs end ===========-->
+						<!-- sort code end -->
+
+						<!-- sortcode details component start -->
+						<div class="ux-component">
+							<div class="ux-dropdown">
+								<div class="drp-box">
+									<a href="javascript:;" class="drp-enterdata">
+										<span>Sort Code</span>
+										<em class="entered-data">5545</em>
+										<div class="enter-input">
+											<input type="text" class="txtEnteredAddress" name="" placeholder="Enter address here">
+											<u class="btn-input-done"></u>
+										</div><!--.enter-input-->
+									</a>
+									<a href="javascript:;" class="drp-showcontent">
+										<span>Sort Code Details</span>
+									</a>
+								</div><!--.drp-box-->
+								<div class="ux-dropdown-content">
+								<div class="row">
+									<div class="col-md-9 col-sm-9">
+										<div class="row">
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Bank Name</span>
+													<em>Lloyds Bank International Limited</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Branch</span>
+													<em>St. Helier</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>City</span>
+													<em>St. Helier</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+										</div> <!-- row -->
+										<div class="row">
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Address</span>
+													<em>9 Broad Street,</em>
+													<em>P.O.Box 10, St.Helier</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Postal Code</span>
+													<em>JE4 8XW</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Country</span>
+													<em>Jersey</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+										</div> <!-- row -->
+									</div> <!-- col-md-9 col-sm-9 -->
+									<div class="col-md-3 col-sm-3">
+										<div class="row">
+											<div class="col-md-12 col-sm-12">
+												<div>
+													logo
+												</div>	
+											</div> <!-- col-md-12 col-sm-12 -->
+										</div> <!-- row -->
+									</div> <!-- col-md-3 col-sm-3 -->
+								</div><!--.row-->
+								<div class="vspacer10"></div><!--.vspacer10-->
+							</div><!--.ux-dropdown-content-->
+							</div><!--.ux-dropdown-->
+						</div>
+						<!-- sortcode details component end -->
 					</div> <!-- col-md-12 col-sm-12 -->
 				</div>
 
@@ -249,7 +343,7 @@
 		      	</footer> <!-- footer -->
     		</div> <!-- left-col-container -->
 
-    	<div class="modal-sandbox">
+    		<div class="modal-sandbox">
 			<!-- ********************************************************************************************** -->
 			<!-- ============================ All popup Starts Here ======================================== -->
 			<!-- ********************************************************************************************** -->
@@ -430,6 +524,112 @@
 		<!-- **************************************************** -->
   		<div class="right-main-column">
     		<a href="javascript:;" class="pin-toggle">Go</a>
+    		<div class="sidebar">
+    			<div class="recent-clients">
+					<h6>Recent Clients</h6>
+					<select class="form-control">
+						<option>123</option>
+						<option>124</option>
+						<option>125</option>
+						<option>126</option>
+					</select>
+				</div> <!-- recent-clients -->
+				<div class="right-container">
+				<div class="right-slide">
+					<a href="#" class="arrow-toggle">
+						<h6 class="panel-title">
+							<span class="client-link"></span>
+							<em>Client Links</em>	
+						</h6>
+					</a> <!-- arrow-toggle -->
+					<div class="right-slide-child">
+			      		<div class="card-body">
+				        	<ul>
+								<li>
+									<a href="javascript:;">My Work</a>
+								</li>
+								<li>
+									<a href="javascript:;">New Requests</a>
+								</li>
+								<li>
+									<a href="javascript:;">Reports</a>
+								</li>
+							</ul> <!-- end of ul -->
+				      	</div> <!-- .card-body -->
+			      	</div> <!-- right-slide-child -->
+			    </div> <!-- right-slide -->
+			    <div class="right-slide">
+			    	<a href="#" class="arrow-toggle">
+			      		<h6 class="panel-title">
+			      			<span class="workspace"></span>
+			      			<em>Workspace</em>
+			      		</h6>
+			        </a> <!-- arrow-toggle -->
+					<div class="right-slide-child">
+			      		<div class="card-body">
+				        	<ul>
+				        		<li>
+				        			<a href="javascript:;">Work 1</a>
+				        		</li>
+				        		<li>
+				        			<a href="javascript:;">Work 2</a>
+				        		</li>
+				        		<li>
+				        			<a href="javascript:;">Work 3</a>
+				        		</li>
+				        	</ul> <!-- end of ul -->	
+				      	</div> <!-- .card-body -->
+			      	</div> <!-- right-slide-child -->
+			    </div> <!-- right-slide -->
+			    <div class="right-slide">
+			    	<a href="#" class="arrow-toggle">
+			    		<h6 class="panel-title">
+			    			<span class="fileupload"></span>
+			    			<em>File Upload</em>	
+			    		</h6>
+			    	</a> <!-- arrow-toggle -->
+					<div class="right-slide-child"> 
+			      		<div class="card-body">
+				       		<ul>
+				        		<li>
+				        			<a href="javascript:;">File 1</a>
+				        		</li>
+				        		<li>
+				        			<a href="javascript:;">File 2</a>
+				        		</li>
+				        		<li>
+				        			<a href="javascript:;">File 3</a>
+				        		</li>
+				        	</ul> <!-- end of ul -->
+				      	</div> <!-- .card-body -->
+			      	</div> <!-- right-slide-child -->
+			    </div> <!-- right-slide -->
+			    <div class="right-slide">
+			    	<a href="#" class="arrow-toggle">
+			      		<h6 class="panel-title">
+			      			<span class="admin"></span>
+			      			<em>Administration</em>	
+			      		</h6>
+			        </a> <!-- arrow-toggle -->
+					<div class="right-slide-child">
+			      		<div class="card-body">
+					        <ul>
+				        		<li>
+				        			<a href="javascript:;">Admin 1</a>
+				        		</li>
+				        		<li>
+				        			<a href="javascript:;">Admin 2</a>
+				        		</li>
+				        		<li>
+				        			<a href="javascript:;">Admin 3</a>
+				        		</li>
+				        	</ul> <!-- end of ul -->
+				      	</div> <!-- .card-body -->
+			      	</div> <!-- right-slide-child -->
+			    </div> <!-- right-slide -->
+			</div>
+    		</div><!--.sidebar-->
+
   		</div> <!-- right-main-column -->
   		<!-- **************************************************** -->
 		<!-- ============= Second main column :: End ============ -->
@@ -450,4 +650,35 @@
 			$('.main').toggleClass('closed');
 		});
 	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".nav_trigger").click(function() {
+				$("body").toggleClass("show_sidebar");
+				$(".nav_trigger .fa").toggleClass("fa-navicon fa-times"); 
+			});
+
+
+			//script for arrow toggle start
+			$(".right-slide .arrow-toggle").click(function(event) {
+
+				if (!$(this).parent(".right-slide").hasClass('slide-active')){
+					$(".right-slide").removeClass('slide-active');
+				}
+				if (!$(this).parent(".right-slide").hasClass('slide-active')){
+					$(this).parent(".right-slide").addClass('slide-active');
+					$('.right-slide-child').slideUp();
+					$(".right-slide").children('.right-slide-child').slideUp();
+					$(this).parent(".right-slide").children('.right-slide-child').slideDown();
+				}
+				else if ($(this).parent(".right-slide").hasClass('slide-active'))
+				{
+					$(this).parent(".right-slide").removeClass('slide-active');
+					$('.right-slide-child').slideUp();
+				}
+			});
+			//script for arrow toggle end
+		});
+	</script>
+	
 </body>

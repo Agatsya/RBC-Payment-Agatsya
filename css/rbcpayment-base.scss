@@ -17,6 +17,7 @@ body {
 	direction: ltr;text-align: left;
 	font-family: "Segoe UI";
 	position: relative;
+	background-color: #f2f2f2;
 }
 a:focus, a:hover {
 	text-decoration: none;
@@ -234,7 +235,6 @@ input, select, textarea {background: transparent;}
 body {
 	/*font-size: 1.5em;*/
 	/*background-color: transparent;*/
-	background: $white;
 	/*@include transform3d;*/
 	@include backface-visibility;
 }/* //body */
@@ -427,7 +427,7 @@ footer {
 	.left-main-column {
 		background: #f2f2f2;
 		position: relative;
-		margin-right: 200px;
+		margin-right: 300px;
 		transition: all .4s ease;
 		.left-col-container {
 			max-width: 1140px;
@@ -450,13 +450,125 @@ footer {
 		a.pin-toggle {
 			position: absolute;
 			left: -40px;
-			top: 30px;
+			top: 0;
 			background: #3949AB;
 			color: white;
 			display: inline-block;
 			padding: 0 10px;
 		} /* .pin-toggle */
+		.sidebar {
+			list-style: none;
+			height: 100%;
+			.recent-clients {
+				background-color: #0051a7;
+		    	padding: 5px 15px 25px 15px;
+			    	h6 {
+			    		font-weight: normal;
+			    		margin: 10px 0;
+			    		color: $white;
+			    	} /* end of h6 tag */
+				} /* .recent-clients */
+			.right-container {
+				.right-slide {
+					border-bottom: 1px solid #6f6f6f;
+    				padding: 18px 20px;
+
+    				.slide-active {
+						h6 {
+							position: relative;
+						}
+						&.after {
+							background: url(../images/icon/down.png) no-repeat center;
+						    transform: rotate(180deg);
+						    content: '';
+						    width: 12px;
+						    height: 12px;
+						    background-size: 12px;
+						    position: absolute;
+						    right: 20px;
+						    /*top: 14px;*/
+						}
+					} /* slide-active */
+
+    				.arrow-toggle {
+    					font-weight: 500;
+    					color: #adadad;
+    					h6 {
+    						position: relative;
+    					} /* end of h6 */
+    					&:after {
+    						background: url(../images/icon/down.png) no-repeat center;
+						    transform: rotate(0deg);
+						    content: '';
+						    width: 12px;
+						    height: 12px;
+						    background-size: 12px;
+						    position: absolute;
+						    right: 20px;
+						    /*top: 14px;*/
+    					}
+
+    					.panel-title {
+    						span {
+    							opacity: .7;
+								position: absolute;
+							    height: 24px;
+							    width: 24px;
+							    top: -3px;
+    						} /* span */
+    						em {margin-left: 35px;}
+    						.client-link {
+								background: url(../images/icon/client-link.png) no-repeat center;
+							}
+							.workspace {
+								background: url(../images/icon/workspace.png) no-repeat center;
+							}
+							.fileupload {
+								background: url(../images/icon/fileupload.png) no-repeat center;
+							}
+							.admin {
+								background: url(../images/icon/admin.png) no-repeat center;
+							}
+						} /* panel-title */
+    				} /* arrow-toggle */
+
+	    			
+					
+
+					.right-slide-child {
+						display: none;
+						.card-body {
+							padding: 0 10px;
+							ul {
+								margin: 10px 0;
+								li {
+									a {
+										color: #28aae4;
+										padding: 10px 15px 10px 25px;
+										&:focus {
+											color: #fff;
+											border-left: 1px solid;
+										}
+									} /* end of anchor tag */
+								} /* end of li */
+							} /* end of ul */
+						} /* .card-body */
+					} /* right-slide-child */
+				
+					.collapsing {
+						background-color: #2d343a;
+					} /* .collapse */
+					.collapse {
+						background-color: #2d343a;
+					} /* .collapse */
+					
+				} /* .right-slide */
+			} /* .right-container */
+		} /* sidebar */
 	} /* right-main-column */
+
+
+
 	&.closed {
 		.left-main-column {margin-right: 0;}
 		.right-main-column {right: -300px;}

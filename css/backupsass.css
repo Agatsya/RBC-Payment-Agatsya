@@ -2213,29 +2213,29 @@ em {font-style: normal;}
 /* ===================== right side section start ================== */
 
 .right-container{
-		.card-body {
-			/*margin-left: 20px;*/
-			padding: 0 10px;
-			ul {
-				margin: 10px 0;
-				li {
-					a {
-						color: #28aae4;
-						padding: 10px 15px 10px 25px;
-						&:focus {
-							color: #fff;
-							border-left: 1px solid;
-						}
-					} /* end of anchor tag */
-				} /* end of li */
-			} /* end of ul */
-		} /* .card-body */
-		.collapsing {
-			background-color: #2d343a;
-		} /* .collapse */
-		.collapse {
-			background-color: #2d343a;
-		} /* .collapse */
+	.card-body {
+		/*margin-left: 20px;*/
+		padding: 0 10px;
+		ul {
+			margin: 10px 0;
+			li {
+				a {
+					color: #28aae4;
+					padding: 10px 15px 10px 25px;
+					&:focus {
+						color: #fff;
+						border-left: 1px solid;
+					}
+				} /* end of anchor tag */
+			} /* end of li */
+		} /* end of ul */
+	} /* .card-body */
+	.collapsing {
+		background-color: #2d343a;
+	} /* .collapse */
+	.collapse {
+		background-color: #2d343a;
+	} /* .collapse */
 } /* .right-container */
 
 /* ===================== right side section end ===================== */
