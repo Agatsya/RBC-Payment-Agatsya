@@ -613,7 +613,7 @@ footer {
   .main .left-main-column {
     background: #f2f2f2;
     position: relative;
-    margin-right: 200px;
+    margin-right: 300px;
     transition: all .4s ease;
     /* left-col-container */ }
     .main .left-main-column .left-col-container {
