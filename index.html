@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>RBCPaymentDemo</title>
+
+	<!-- bootstrap 4 -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css"> --> <!-- bootstrap 4 -->
+  
+
+	<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/rbcpayment-base.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/rbc-custom.css">
+
+</head>
+<body>
+<!-- ============================================================== -->
+<!-- +++++++++++++++ Main Application starts here +++++++++++++++++ -->
+<!-- ============================================================== -->
+
+<!-- **************************************************** -->
+<!-- ============== Right Side bar :: Start ============== -->
+<!-- **************************************************** -->
+
+	<!-- .push_sidebar -->
+	<div class="push_sidebar">
+		<div class="sidebar">
+			<!-- <a href="javascript:;" class="pin-toggle"></a> -->
+			<nav>
+				<div class="recent-clients">
+					<h6>Recent Clients</h6>
+					<select class="form-control">
+						<option>123</option>
+						<option>124</option>
+						<option>125</option>
+						<option>126</option>
+					</select>
+				</div> <!-- .recent-clients -->
+				<div class="right-container">
+					<div class="right-slide">
+						<a href="#" class="arrow-toggle">
+							<h6 class="panel-title">
+								<span class="client-link"></span>
+								<em>Client Links</em>	
+							</h6>
+						</a> <!-- arrow-toggle -->
+						<div class="right-slide-child" >
+				      		<div class="card-body">
+					        	<ul>
+									<li>
+										<a href="javascript:;">My Work</a>
+									</li>
+									<li>
+										<a href="javascript:;">New Requests</a>
+									</li>
+									<li>
+										<a href="javascript:;">Reports</a>
+									</li>
+								</ul> <!-- end of ul -->
+					      	</div> <!-- .card-body -->
+				      	</div> <!-- right-slide-child -->
+				    </div> <!-- right-slide -->
+				    <div class="right-slide">
+				    	<a href="#" class="arrow-toggle">
+				      		<h6 class="panel-title">
+				      			<span class="workspace"></span>
+				      			<em>Workspace</em>
+				      		</h6>
+				        </a> <!-- arrow-toggle -->
+						<div class="right-slide-child">
+				      		<div class="card-body">
+					        	<ul>
+					        		<li>
+					        			<a href="javascript:;">Work 1</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">Work 2</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">Work 3</a>
+					        		</li>
+					        	</ul> <!-- end of ul -->	
+					      	</div> <!-- .card-body -->
+				      	</div> <!-- right-slide-child -->
+				    </div> <!-- right-slide -->
+				    <div class="right-slide">
+				    	<a href="#" class="arrow-toggle">
+				    		<h6 class="panel-title">
+				    			<span class="fileupload"></span>
+				    			<em>File Upload</em>	
+				    		</h6>
+				    	</a> <!-- arrow-toggle -->
+						<div class="right-slide-child"> 
+				      		<div class="card-body">
+					       		<ul>
+					        		<li>
+					        			<a href="javascript:;">File 1</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">File 2</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">File 3</a>
+					        		</li>
+					        	</ul> <!-- end of ul -->
+					      	</div> <!-- .card-body -->
+				      	</div> <!-- right-slide-child -->
+				    </div> <!-- right-slide -->
+				    <div class="right-slide">
+				    	<a href="#" class="arrow-toggle">
+				      		<h6 class="panel-title">
+				      			<span class="admin"></span>
+				      			<em>Administration</em>	
+				      		</h6>
+				        </a> <!-- arrow-toggle -->
+						<div class="right-slide-child">
+				      		<div class="card-body">
+						        <ul>
+					        		<li>
+					        			<a href="javascript:;">Admin 1</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">Admin 2</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">Admin 3</a>
+					        		</li>
+					        	</ul> <!-- end of ul -->
+					      	</div> <!-- .card-body -->
+				      	</div> <!-- right-slide-child -->
+				    </div> <!-- right-slide -->
+				</div> <!-- .right-container -->
+
+			</nav> <!-- end of main nav -->
+		</div> <!-- .sidebar -->	
+	</div> 
+	<!-- .push_sidebar -->
+
+<!-- **************************************************** -->
+<!-- ============== Right Side bar :: End ============== -->
+<!-- **************************************************** -->
+
+<!-- **************************************************** -->
+<!-- ============== Left Side Body :: Start ============== -->
+<!-- **************************************************** -->
+	
+	<!-- .wrapper -->
+	<div class="wrapper">
+		<!-- .container-fluid -->
+		<div class="container-fluid">
+			<div class="top-header">
+				<span class="nav_trigger"><i class="fa fa-navicon"></i></span>
+				<div class="head-content">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="company-logo">
+								<img src="images/logo/rbc-wm-logo.png">
+							</div><!--.company-logo-->
+						</div> <!-- col-md-6 col-sm-6 -->
+						<div class="col-md-6 col-sm-6">
+							<div class="user-name">
+								<span>Hi, Jack</span>
+								<h3>Third Party Payment</h3>
+							</div>
+						</div> <!-- col-md-6 col-sm-6 -->
+					</div> <!-- .row -->
+				</div> <!-- .head-content -->
+				<div class="vspacer10"></div>
+				
+				<div class="row bread-content">
+					<div class="col-md-2 col-sm-2"></div>
+						<div class="col-md-8 col-sm-8">
+							<div class="band-breadcrumb">
+								<div class="head-content"> 
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+										<li class="breadcrumb-item active">New Request</li>
+									</ol> <!-- .breadcrumb -->
+								</div> <!-- head-content -->
+							</div> <!-- .band-breadcrumb -->
+						</div>
+					<div class="col-md-2 col-sm-2"></div>
+				</div> <!-- .row -->
+			</div> <!-- .top-header -->
+		</div> <!-- .container-fluid -->
+		<div class="vspacer20"></div>
+		<!-- .container -->
+		<div class="container">
+			<div class="page-container">
+				<div class="vspacer10"></div>
+				<div class="row">
+					<div class="col-md-2 col-sm-2"></div>
+					<div class="col-md-8 col-sm-8">
+						<div class="page-content">
+							<div class="widget-container">
+	    						<div role="content">
+								    <!-- widget content -->
+								    <div class="widget-body">
+										<div class="row">
+								            <form class="wizard-form">
+								                <div class="form-bootstrapWizard">
+							                        <ul class="bootstrapWizard form-wizard">
+							                            <li class="active" data-target="#step1">
+							                                <a href="#tab1" data-toggle="tab" >
+							                                	<span class="step">1</span> <span class="title">Bank Details</span>
+							                                </a>
+							                            </li>
+							                            <li data-target="#step2" class="">
+							                                <a href="#tab2" data-toggle="tab">
+							                                	<span class="step">2</span> <span class="title">Payee Details</span>
+							                                </a>
+							                            </li>
+							                            <li data-target="#step3" class="">
+							                                <a href="#tab3" data-toggle="tab">
+							                                	<span class="step">3</span> <span class="title">Other Details</span> 
+							                                </a>
+							                            </li>
+							                            <li data-target="#step4" class="">
+							                                <a href="#tab4" data-toggle="tab"> 
+							                                	<span class="step">4</span><span class="title">Summary</span> 
+							                                </a>
+							                            </li>
+							                        </ul> <!-- .bootstrapWizard -->
+								                    <div class="clearfix"></div>
+								                </div>
+							                </form> <!-- .wizard-form -->
+								        </div> <!-- .row -->
+									</div> <!-- .widget-body -->
+								</div> <!-- end widget content -->
+							</div> <!-- .widget-container -->	
+						</div> <!-- .page-content -->
+					</div> <!-- col-md-8 col-sm-8 -->
+					<div class="col-md-2 col-sm-2"></div>
+				</div> <!-- row -->
+
+				<div class="vspacer40"></div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<!-- ======== control of small tabs start =========-->
+						<div class="ux-small-tab">
+							<h6>Payment Type</h6>
+							<div class="tab-container">
+								<div class="uxd-tabswitch">
+									<ul class="lst-uxd-tabswitch">
+										<li>
+											<a href="javascript:;" class="tab-selected" id="tabbtn-encryption">Private Individual</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="tabbtn-decryption">Financial Institution</a>
+										</li>
+									</ul><!--.lst-uxd-tabswitch-->
+									<div class="vgap10"></div><!--.vgap10-->
+							
+									<div class="uxd-tabcontent">
+										<div id="tabcontent-encryption">
+											<div class="reports-data">
+												<div class="row">
+													<div class="col-sm-12">
+														This is the Private individual section
+													</div><!--.col-xs-12-->
+												</div><!--.row-->
+											</div><!--.reports-data-->
+										</div><!--#tabcontent-encryption-->
+										<div id="tabcontent-decryption" style="display:none;">
+											<div class="reports-data">
+												<div class="row">
+													<div class="col-sm-12">
+														This is the Financial institute section
+													</div><!--.col-xs-12-->
+												</div><!--.row-->
+											</div><!--.reports-data-->
+										</div><!--#tabcontent-decryption-->
+									</div><!--.uxd-tabcontent-->
+								</div><!--.uxd-tabswitch-->
+							</div> <!-- .tab-container -->
+						</div> <!-- .ux-small-tab -->
+						<!-- ======== control of small tabs end =========-->
+					</div> <!-- col-md-12 col-sm-12 -->
+				</div> <!-- row -->
+				
+				<div class="vspacer10"></div>
+
+				<!-- popup component start --> 
+				<div class="ux-component">
+					<a href="javascript:;" data-toggle="modal" data-target="#Modal-pop1">
+						<div class="ux-selection ux-comp-box ux-comp-selected">
+							<span>From</span>
+							<em class="entered-data">Select Debit Amount</em>
+						</div> <!-- ux-comp-selected -->
+					</a> <!-- end of anchor tag -->
+				</div> <!-- ux-component -->
+				<!-- popup component end --> 
+
+				<!-- input component start -->
+				<div class="ux-component">
+					<a href="javascript:;">
+						<div class="ux-input ux-comp-box">
+							<span><i>*</i>Amount (GBP)</span>
+							<em class="entered-data">Enter Amount</em>
+							<div class="enter-input">
+								<input type="text" class="txtEnteredData" name="" value="5000" placeholder="Enter amount here">
+							</div><!--.enter-input-->
+						</div><!--.ux-selection-->
+					</a> <!-- end of anchor tag -->
+				</div> <!-- ux-component -->
+				<!-- input component end -->
+
+				<div class="vspacer20"></div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="center-heading">
+							<h5>Bank Details</h5>
+						</div>
+						<!-- country popup start -->
+						<div class="ux-component">
+							<a href="javascript:;" data-toggle="modal" data-target="#Modal-selectcountry">
+								<div class="ux-selection ux-comp-box  ux-comp-selected">
+									<span>Beneficiary Bank Country</span>
+									<em>United Kingdom</em>
+								</div><!--.ux-selection-->
+							</a>
+						</div>
+						<!-- country popup end -->
+					</div> <!-- col-md-12 col-sm-12 -->
+				</div> <!-- row -->	
+				
+				<div class="vspacer20"></div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<!-- ======== control of large tabs start =========-->
+						<div class="ux-large-tab">
+							<h6>How would you like to identify the bank where the account is held?</h6>
+							<div class="tab-container">
+								<div class="uxd-tabswitch">
+									<ul class="lst-uxd-tabswitch">
+										<li>
+											<a href="javascript:;" class="tab-selected" id="tabbtn-swift-bic">
+											Use SWIFT/BIC
+												<p>Text not visible</p>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="tabbtn-uk-sortcode">Use UK Sort Code
+												<p>Functional Clearing Code</p>
+											</a>
+										</li>
+									</ul><!--.lst-uxd-tabswitch-->
+									<div class="vgap10"></div><!--.vgap10-->
+							
+									<div class="uxd-tabcontent">
+										<div id="tabcontent-swift-bic">
+											<div class="reports-data">
+												<div class="row">
+													<div class="col-sm-12">
+														This is Swift bic code section
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+														tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+														</p>
+													</div><!--.col-xs-12-->
+												</div><!--.row-->
+											</div><!--.reports-data-->
+										</div><!--#tabcontent-encryption-->
+										<div id="tabcontent-uk-sortcode" style="display:none;">
+											<div class="reports-data">
+												<div class="row">
+													<div class="col-sm-12">
+														This is UK sort code section
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+														tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+														</p>
+													</div><!--.col-xs-12-->
+												</div><!--.row-->
+											</div><!--.reports-data-->
+										</div><!--#tabcontent-decryption-->
+									</div><!--.uxd-tabcontent-->
+								</div><!--.uxd-tabswitch-->
+							</div> <!-- .tab-container -->
+						</div>
+						<!-- ======== control of large tabs end ===========-->
+					</div> <!-- col-md-12 col-sm-12 -->
+				</div> <!-- .row -->
+
+				<div class="vspacer10"></div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<!-- sort code start -->
+						<div class="ux-component">
+							<a href="javascript:;" data-toggle="modal" data-target="#Modal-sortcode">
+								<div class="ux-selection ux-comp-box ux-comp-selected">
+									<span>Sort Code</span>
+									<em class="entered-data">Select/ Enter Sort Code</em>
+								</div><!--.ux-selection-->
+							</a>
+						</div>
+						<!-- sort code end -->
+
+						<!-- sortcode details component start -->
+						<div class="ux-component">
+							<div class="ux-dropdown">
+								<div class="drp-box">
+									<a href="javascript:;" class="drp-enterdata">
+										<span>Sort Code</span>
+										<em class="entered-data">5545</em>
+										<div class="enter-input">
+											<input type="text" class="txtEnteredAddress" name="" placeholder="Enter address here">
+											<u class="btn-input-done"></u>
+										</div><!--.enter-input-->
+									</a>
+									<a href="javascript:;" class="drp-showcontent">
+										<span>Sort Code Details</span>
+									</a>
+								</div><!--.drp-box-->
+								<div class="ux-dropdown-content">
+								<div class="row">
+									<div class="col-md-9 col-sm-9">
+										<div class="row">
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Bank Name</span>
+													<em>Lloyds Bank International Limited</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Branch</span>
+													<em>St. Helier</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>City</span>
+													<em>St. Helier</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+										</div> <!-- row -->
+										<div class="row">
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Address</span>
+													<em>9 Broad Street,</em>
+													<em>P.O.Box 10, St.Helier</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Postal Code</span>
+													<em>JE4 8XW</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+											<div class="col-md-4 col-sm-4">
+												<div class="ux-incomponent">
+													<span>Country</span>
+													<em>Jersey</em>
+												</div> <!-- ux-incomponent -->
+											</div> <!-- col-md-4 col-sm-4 -->
+										</div> <!-- row -->
+									</div> <!-- col-md-9 col-sm-9 -->
+									<div class="col-md-3 col-sm-3">
+										<div class="row">
+											<div class="col-md-12 col-sm-12">
+												<div>
+													logo
+												</div>	
+											</div> <!-- col-md-12 col-sm-12 -->
+										</div> <!-- row -->
+									</div> <!-- col-md-3 col-sm-3 -->
+								</div><!--.row-->
+								<div class="vspacer10"></div><!--.vspacer10-->
+							</div><!--.ux-dropdown-content-->
+							</div><!--.ux-dropdown-->
+						</div>
+						<!-- sortcode details component end -->
+
+						<div class="vspacer20"></div>
+
+						<!-- ======== control of larger tabs start =========-->
+						<div class="ux-large-tab">
+							<h6>How would you like to identify the bank where the account is held?</h6>
+							<div class="tab-container">
+								<div class="uxd-tabswitch">
+									<ul class="lst-uxd-tabswitch">
+										<li>
+											<a href="javascript:;" class="tab-selected" id="tabbtn-SHA">
+											SHA
+												<p>Charge will be deducted from </br>destination bank account</p>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" id="tabbtn-OUR">OUR
+												<p>Charge will be deducted from </br>source bank account</p>
+											</a>
+										</li>
+									</ul><!--.lst-uxd-tabswitch-->
+									<div class="vgap10"></div><!--.vgap10-->
+							
+									<div class="uxd-tabcontent">
+										<div id="tabcontent-SHA">
+											<div class="reports-data">
+												<div class="row">
+													<div class="col-sm-12">
+														This is SHA section
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+														tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+														</p>
+													</div><!--.col-xs-12-->
+												</div><!--.row-->
+											</div><!--.reports-data-->
+										</div><!--#tabcontent-encryption-->
+										<div id="tabcontent-OUR" style="display:none;">
+											<div class="reports-data">
+												<div class="row">
+													<div class="col-sm-12">
+														This is OUR bank section
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+														tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+														</p>
+													</div><!--.col-xs-12-->
+												</div><!--.row-->
+											</div><!--.reports-data-->
+										</div><!--#tabcontent-decryption-->
+									</div><!--.uxd-tabcontent-->
+								</div><!--.uxd-tabswitch-->
+							</div> <!-- .tab-container -->
+						</div>
+						<!-- ======== control of larger tabs end ===========-->
+
+					</div> <!-- col-md-12 col-sm-12 -->
+				</div> <!-- row -->
+
+			</div> <!-- .page-container -->
+
+			<div class="footer">
+				this is footer
+			</div><!--.footer-->
+			
+
+			<div class="modal-sandbox">
+			<!-- ********************************************************************************************** -->
+			<!-- ============================ All popup Starts Here ======================================== -->
+			<!-- ********************************************************************************************** -->
+
+			<!-- ********************************************************************************************** -->
+			<!--============================Select Payment From Start =========================================== -->
+			<!-- ********************************************************************************************** -->
+			<div class="modal fade" id="Modal-pop1">
+			    <div class="container">
+				    <div class="row">
+					    <div class="col-md-12 col-sm-12">
+					    	<div class="modal-dialog modal-lg">
+						    	<!-- Modal content-->
+							    <div class="modal-content">
+							    	<div class="modal-header">
+							    		<div class="modal-top-header">
+								      		<div class="row">
+								      			<div class="col-md-12 col-sm-12">
+								      				<h6>Payment step 1 of 2</h6>
+									        	</div><!-- col-xs-12 -->
+									        </div><!-- row -->
+									        <div class="modal-bottom-header">
+									      		<div class="row">
+									      			<div class="col-md-2 col-sm-2">													</div><!-- col-xs-2 -->
+									      			<div class="col-md-8 col-sm-8">
+									      					<h4>Select Country</h4>
+										        	</div><!-- col-xs-8 -->
+									        		<div class="col-md-2 col-sm-2">
+													        <button type="button" class="modal-btn-close" data-dismiss="modal"></button>
+													</div><!-- col-xs-2 -->
+										        </div><!-- row -->
+									        </div><!-- .modal-bottom-header -->
+								        </div><!-- .modal-top-header -->
+							    	</div> <!-- .modal-header -->
+
+							    	<div class="modal-body">
+							    		<div class="row">
+							      			<div class="col-md-12 col-sm-12">
+							      				hedllo
+							      			</div> <!-- col-md-12 col-sm-12 -->
+							      		</div> <!-- row -->
+							    	</div> <!-- .modal-body -->
+
+							    	<div class="modal-footer">
+							       		<button type="button" class="btn btn-primary">Continue</button>
+							      	</div> <!-- .modal-footer -->
+							    </div>
+							    <!-- Modal content-->
+						    </div> <!-- .modal-dialog modal-lg -->
+						</div> <!-- col-md-12 -->
+					</div> <!-- row -->	
+				</div> <!-- .container -->
+			</div> <!-- .modal -->
+			<!-- ********************************************************************************************** -->
+			<!--============================Select Payment From Ends =========================================== -->
+			<!-- ********************************************************************************************** -->
+
+			<!-- ********************************************************************************************** -->
+			<!-- ============================Select Country Starts======================================== -->
+			<!-- ********************************************************************************************** -->
+			<div id="Modal-selectcountry" class="modal fade" role="dialog">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="modal-dialog modal-lg">
+								<!-- Modal content-->
+							    <div class="modal-content">
+							      	<div class="modal-header">
+							    		<div class="modal-top-header">
+								      		<div class="row">
+								      			<div class="col-md-12 col-sm-12">
+								      				<h6>Payment step 1 of 2</h6>
+									        	</div><!-- col-xs-12 -->
+									        </div><!-- row -->
+									        <div class="modal-bottom-header">
+									      		<div class="row">
+									      			<div class="col-md-2 col-sm-2">													</div><!-- col-xs-2 -->
+									      			<div class="col-md-8 col-sm-8">
+									      					<h4>Select Country</h4>
+										        	</div><!-- col-xs-8 -->
+									        		<div class="col-md-2 col-sm-2">
+													        <button type="button" class="modal-btn-close" data-dismiss="modal"></button>
+													</div><!-- col-xs-2 -->
+										        </div><!-- row -->
+									        </div><!-- .modal-bottom-header -->
+								        </div><!-- .modal-top-header -->
+						    		</div> <!-- .modal-header -->
+
+								    <div class="modal-body">
+								      	<div class="row">
+								      		<div class="col-md-12 col-sm-12">
+									      		<p>This is the country popup</p>
+									      	</div><!-- .col-md-12 col-sm-12 -->
+								      	</div><!-- .row -->
+								        
+								    </div><!-- .modal-body -->
+								    <div class="modal-footer">
+								       	<button type="button" class="btn btn-primary">Continue</button>
+								    </div><!-- .modal-footer -->
+							    </div><!-- .modal-content -->
+							</div> <!-- modal-dialog modal-lg -->
+						</div><!-- col-xs-12 -->
+					</div><!-- .row -->
+				</div><!-- .container -->
+			</div><!-- .modal Modal-selectcountry-->
+			<!-- ********************************************************************************************** -->
+			<!--============================Select Country Ends=========================================== -->
+			<!-- ********************************************************************************************** -->
+
+			<!-- ********************************************************************************************** -->
+			<!--============================ Sort Code Modal Start =========================================== -->
+			<!-- ********************************************************************************************** -->
+			<div class="modal fade" id="Modal-sortcode">
+			    <div class="container">
+				    <div class="row">
+					    <div class="col-md-12 col-sm-12">
+					    	<div class="modal-dialog modal-lg">
+						    	<!-- Modal content-->
+							    <div class="modal-content">
+							    	<div class="modal-header">
+							    		<div class="modal-top-header">
+								      		<div class="row">
+								      			<div class="col-md-12 col-sm-12">
+								      				<h6>Payment step 1 of 2</h6>
+									        	</div><!-- col-xs-12 -->
+									        </div><!-- row -->
+									        <div class="modal-bottom-header">
+									      		<div class="row">
+									      			<div class="col-md-2 col-sm-2">													</div><!-- col-xs-2 -->
+									      			<div class="col-md-8 col-sm-8">
+									      					<h4>Select Country</h4>
+										        	</div><!-- col-xs-8 -->
+									        		<div class="col-md-2 col-sm-2">
+													        <button type="button" class="modal-btn-close" data-dismiss="modal"></button>
+													</div><!-- col-xs-2 -->
+										        </div><!-- row -->
+									        </div><!-- .modal-bottom-header -->
+								        </div><!-- .modal-top-header -->
+							    	</div> <!-- .modal-header -->
+
+							    	<div class="modal-body">
+							    		<div class="row">
+							      			<div class="col-md-12 col-sm-12">
+							      				<p>This is modal for sort code</p>
+							      			</div> <!-- col-md-12 col-sm-12 -->
+							      		</div> <!-- row -->
+							    	</div> <!-- .modal-body -->
+
+							    	<div class="modal-footer">
+							       		<button type="button" class="btn btn-primary">Continue</button>
+							      	</div> <!-- .modal-footer -->
+							    </div>
+							    <!-- Modal content-->
+						    </div> <!-- .modal-dialog modal-lg -->
+						</div> <!-- col-md-12 -->
+					</div> <!-- row -->	
+				</div> <!-- .container -->
+			</div> <!-- .modal -->
+			<!-- ********************************************************************************************** -->
+			<!--============================ Sort Code Modal Ends=========================================== -->
+			<!-- ********************************************************************************************** -->
+
+			<!-- ********************************************************************************************** -->
+			<!-- ============================ All popup End Here ======================================== -->
+			<!-- ********************************************************************************************** -->
+			</div> <!-- modal-sandbox -->
+
+
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.wrapper -->
+<!-- **************************************************** -->
+<!-- ============== Left Side Body :: End ============== -->
+<!-- **************************************************** -->
+	
+<!-- ============================================================== -->
+<!-- +++++++++++++++ Main Application ends here +++++++++++++++++++ --> 
+<!-- ============================================================== -->
+
+	
+	
+	
+	<script type="text/javascript" src="scripts/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/lib/popper.min.js"></script>
+	<script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/rbc-common.js"></script>
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".nav_trigger").click(function() {
+				$("body").toggleClass("show_sidebar");
+				$(".nav_trigger .fa").toggleClass("fa-navicon fa-times"); 
+			});
+
+
+			//script for arrow toggle start
+			$(".right-slide .arrow-toggle").click(function(event) {
+
+				if (!$(this).parent(".right-slide").hasClass('slide-active')){
+					$(".right-slide").removeClass('slide-active');
+				}
+				if (!$(this).parent(".right-slide").hasClass('slide-active')){
+					$(this).parent(".right-slide").addClass('slide-active');
+					$('.right-slide-child').slideUp();
+					$(".right-slide").children('.right-slide-child').slideUp();
+					$(this).parent(".right-slide").children('.right-slide-child').slideDown();
+				}
+				else if ($(this).parent(".right-slide").hasClass('slide-active'))
+				{
+					$(this).parent(".right-slide").removeClass('slide-active');
+					$('.right-slide-child').slideUp();
+				}
+			});
+			//script for arrow toggle end
+		});
+	</script>
+   
+</body>
+</html>

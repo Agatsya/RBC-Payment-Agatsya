@@ -1,0 +1,1495 @@
+@charset "UTF-8";
+/************************************************************************
+ *	Created on: OCTOBER 11, 2017 Wednesday
+ *  Project: RBC OLS Payment 
+ *  Copyright: Infrasofttech ┬⌐ 2017. All rights reserved.
+ *******************************************************************************/
+/* ====== RESET CSS :: Start */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+body, ul, ol {
+  padding: 0; }
+
+li, dl, dt, dd {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0; }
+
+hgroup {
+  margin: 0; }
+
+hgroup, p {
+  padding: 0; }
+
+blockquote, figure, form, fieldset, input, legend, pre, abbr {
+  margin: 0;
+  padding: 0; }
+
+pre, code, address, caption, th, figcaption {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal; }
+
+fieldset, iframe, img {
+  border: 0; }
+
+caption, th {
+  text-align: left; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, footer, header, nav, main, section, summary, details, hgroup, figure, figcaption {
+  display: block; }
+
+audio, canvas, video, progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+body {
+  font-size: 14px;
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+  text-align: left;
+  font-family: "Segoe UI";
+  position: relative; }
+
+a:focus, a:hover {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0; }
+
+/* ====== RESET CSS :: End   */
+/* ====== Brand Specific Variables :: Start */
+/* -- base colors */
+/* // -- RBC - Dark Blue */
+/* // -- RBC - Blue */
+/* //resources - path */
+/*$images-icon-path     : '../../Images/custom/icon/';*/
+/* ====== Brand Specific Variables :: End */
+/* ====== COMMON MIXINS :: Start */
+/* //transition */
+/* //transform */
+/* //animation */
+/* ====== COMMON MIXINS :: End   */
+/* other common classes start */
+input, select, textarea {
+  background: transparent; }
+
+body {
+  /*font-size: 1.5em;*/
+  /*background-color: transparent;*/
+  background: #ffffff;
+  /*@include transform3d;*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* //body */
+a {
+  color: #0051a5;
+  cursor: pointer; }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none; }
+
+a, a:hover, a:focus {
+  outline: none; }
+
+input:hover, input:focus,
+input[type="checkbox"], input[type="checkbox"]:focus,
+input[type="radio"], input[type="radio"]:focus {
+  outline: none; }
+
+/* //&:focus */
+/*a:focus, a:hover {color: darken($brand-secondary-color, 10%);}*/
+em {
+  font-style: normal; }
+
+.vspacer5 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 5px;
+  zoom: 1; }
+
+.vspacer10 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 10px;
+  zoom: 1; }
+
+.vspacer15 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 15px;
+  zoom: 1; }
+
+.vspacer20 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 20px;
+  zoom: 1; }
+
+.vspacer25 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 25px;
+  zoom: 1; }
+
+.vspacer30 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 30px;
+  zoom: 1; }
+
+.vspacer35 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 35px;
+  zoom: 1; }
+
+.vspacer40 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 40px;
+  zoom: 1; }
+
+.vspacer45 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 45px;
+  zoom: 1; }
+
+.vspacer50 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 50px;
+  zoom: 1; }
+
+.vspacer55 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 55px;
+  zoom: 1; }
+
+.vspacer60 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 60px;
+  zoom: 1; }
+
+.vspacer65 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 65px;
+  zoom: 1; }
+
+.vspacer70 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 70px;
+  zoom: 1; }
+
+.vspacer75 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 75px;
+  zoom: 1; }
+
+.vspacer80 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 80px;
+  zoom: 1; }
+
+.vspacer85 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 85px;
+  zoom: 1; }
+
+.vspacer90 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 90px;
+  zoom: 1; }
+
+.vspacer95 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 95px;
+  zoom: 1; }
+
+.vspacer100 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 100px;
+  zoom: 1; }
+
+.vspacer1 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 1px;
+  zoom: 1; }
+
+.vspacer2 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 2px;
+  zoom: 1; }
+
+.vspacer3 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 3px;
+  zoom: 1; }
+
+.vspacer4 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 4px;
+  zoom: 1; }
+
+.vspacer5 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 5px;
+  zoom: 1; }
+
+.vspacer6 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 6px;
+  zoom: 1; }
+
+.vspacer7 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 7px;
+  zoom: 1; }
+
+.vspacer8 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 8px;
+  zoom: 1; }
+
+.vspacer9 {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 9px;
+  zoom: 1; }
+
+.hspacer5 {
+  width: 5px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer10 {
+  width: 10px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer15 {
+  width: 15px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer20 {
+  width: 20px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer25 {
+  width: 25px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer30 {
+  width: 30px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer35 {
+  width: 35px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer40 {
+  width: 40px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer45 {
+  width: 45px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer50 {
+  width: 50px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer55 {
+  width: 55px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer60 {
+  width: 60px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer65 {
+  width: 65px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer70 {
+  width: 70px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer75 {
+  width: 75px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer80 {
+  width: 80px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer85 {
+  width: 85px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer90 {
+  width: 90px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer95 {
+  width: 95px;
+  height: 40px;
+  display: inline-block; }
+
+.hspacer100 {
+  width: 100px;
+  height: 40px;
+  display: inline-block; }
+
+/* other common classes end */
+/* ============= Bootstrap Overwriting Start :: ================= */
+.modal {
+  /*.modal-dialog*/
+  /*.modal-content*/
+  /*.modal-lg*/
+  /*.modal-header*/
+  /*.modal-body*/
+  /*.modal-footer*/
+  /* .modal-top-header */
+  /* .modal-bottom-header */
+  /* .modal-btn-close */ }
+  .modal .modal-dialog {
+    margin: 0;
+    width: auto;
+    position: relative; }
+  .modal .modal-content {
+    border: 0;
+    border-radius: 0;
+    position: relative;
+    padding: 0px;
+    height: 100vh;
+    /*overflow: auto;*/
+    /* //&.mc-sm */ }
+    .modal .modal-content .modal-body {
+      padding: 75px 15px 85px; }
+    .modal .modal-content.mc-sm .modal-body {
+      padding: 55px 15px 85px; }
+  .modal .modal-lg {
+    width: auto;
+    max-width: inherit; }
+  .modal .modal-header {
+    padding: 0px;
+    border-bottom: 1px solid #eee;
+    /* -- @ahmad */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9); }
+  .modal .modal-body {
+    /*height: calc(100vh - 140px);*/
+    /*max-height: 600px;*/
+    /*overflow-y: auto;*/
+    position: relative;
+    /*padding: 15px;*/
+    height: 100%;
+    /*overflow: auto;*/
+    /* //.overflow-box */
+    /* -- @ahmad */ }
+    .modal .modal-body .overflow-box {
+      overflow: auto;
+      height: 100%; }
+  .modal .modal-footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9); }
+    .modal .modal-footer .btn {
+      margin: 0 auto; }
+  .modal .modal-top-header {
+    width: 100%;
+    /* h6 */ }
+    .modal .modal-top-header h6 {
+      padding: 5px 0;
+      margin: 0;
+      text-align: center;
+      background-color: rgba(0, 81, 165, 0.1);
+      font-size: 12px; }
+  .modal .modal-bottom-header {
+    position: relative;
+    /* h4 */ }
+    .modal .modal-bottom-header h4 {
+      color: #0051a5;
+      text-align: center;
+      margin: 0;
+      padding: 10px 0;
+      font-size: 16px; }
+  .modal .modal-btn-close {
+    /*background: url('../images/icon/close-blue.png') no-repeat center;*/
+    background: url("../images/icon/cross.png") no-repeat center;
+    background-size: 14px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    border: none;
+    outline: 0;
+    border: none;
+    float: right;
+    padding: 19px 20px;
+    /* &:hover */ }
+    .modal .modal-btn-close:hover {
+      background: rgba(188, 0, 0, 0.9) url("../images/icon/cross-w.png") no-repeat center;
+      background-size: 14px;
+      width: 18px;
+      height: 18px; }
+
+/* .modal */
+.radio, .checkbox {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+/* ====== Bootstrap Overwriting :: End :: =======================  */
+/* ------------------------------------------------------------------
+				Global Header and Footer :: Start
+------------------------------------------------------------------ */
+header {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 200px;
+  z-index: 10;
+  transition: all .4s ease;
+  padding: 20px;
+  /* end of h1 */
+  /* logo */ }
+  header h1 {
+    font-size: 2em;
+    font-weight: 100;
+    /* end of b tag */ }
+    header h1 b {
+      font-weight: 400; }
+  header .logo {
+    /* end of img tag */ }
+    header .logo img {
+      height: 40px; }
+
+/* header */
+footer {
+  background: teal;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 300px;
+  z-index: 10;
+  transition: all .4s ease;
+  padding: 20px;
+  /* end of h1 */ }
+  footer h1 {
+    font-size: 2em;
+    font-weight: 100;
+    /* end of b tag */ }
+    footer h1 b {
+      font-weight: 400; }
+
+/* footer */
+/* ------------------------------------------------------------------
+				Global Header and Footer :: End
+------------------------------------------------------------------ */
+/*---------------------*** Main page css :: START ***--------------*/
+.main {
+  background: #f0f0f0;
+  position: relative;
+  /* left main column start */
+  /* left-main-column */
+  /* left main column end */
+  /* main right content start */
+  /* right-main-column */
+  /* and closed */ }
+  .main .left-main-column {
+    background: #f2f2f2;
+    position: relative;
+    margin-right: 200px;
+    transition: all .4s ease;
+    /* left-col-container */ }
+    .main .left-main-column .left-col-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 100px 0; }
+  .main .right-main-column {
+    background: #42494f;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all .4s ease;
+    z-index: 20;
+    /* .pin-toggle */ }
+    .main .right-main-column a.pin-toggle {
+      position: absolute;
+      left: -40px;
+      top: 30px;
+      background: #3949AB;
+      color: white;
+      display: inline-block;
+      padding: 0 10px; }
+  .main.closed .left-main-column {
+    margin-right: 0; }
+  .main.closed .right-main-column {
+    right: -300px; }
+  .main.closed header {
+    right: 0; }
+  .main.closed footer {
+    right: 0; }
+
+/* main css end */
+/*---------------------*** Main page css :: END ***----------------*/
+/*===================== common controls css START =================*/
+.btn-primary {
+  background-color: #0051a5;
+  border-color: #0051a5;
+  border-radius: 0;
+  padding: 5px 30px 5px 30px; }
+
+/* btn-primary */
+.center-heading {
+  text-align: center;
+  text-transform: uppercase; }
+  .center-heading h5 {
+    margin-bottom: 10px; }
+
+/* center-heading */
+/***=== wizard start ===***/
+.widget-container {
+  /* .wizard-form */ }
+  .widget-container .wizard-form {
+    width: 100%;
+    /* .form-bootstrapWizard */ }
+    .widget-container .wizard-form .form-bootstrapWizard {
+      /* .bootstrapWizard */ }
+      .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard {
+        display: block;
+        list-style: none;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        /* li end */ }
+        .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li {
+          display: block;
+          float: left;
+          width: 25%;
+          text-align: center;
+          padding-left: 0;
+          /* li active */
+          /* .step */
+          /* .title end */ }
+          .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li::before {
+            border-top: 3px solid #55606E;
+            content: "";
+            display: block;
+            font-size: 0;
+            overflow: hidden;
+            position: relative;
+            top: 11px;
+            right: 1px;
+            width: 100%;
+            z-index: 1; }
+          .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li :first-child:before {
+            left: 50%;
+            max-width: 50%; }
+          .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li :last-child:before {
+            max-width: 50%;
+            width: 50%; }
+          .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li.active {
+            /* .step */
+            /* .title */ }
+            .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li.active .step {
+              background-color: #0051a5;
+              color: #fff;
+              font-weight: 700;
+              padding: 0px 30px;
+              font-size: 15px; }
+            .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li.active .title {
+              color: #2B3D53; }
+          .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li a:hover, .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li a:active, .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li a:focus {
+            text-decoration: none; }
+          .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li .step {
+            background: #B2B5B9;
+            color: #fff;
+            display: inline;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 12px;
+            padding: 0px 30px;
+            line-height: normal;
+            position: relative;
+            text-align: center;
+            z-index: 2;
+            transition: all 0.1s linear 0s; }
+          .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li .title {
+            color: #bfbfbf;
+            display: block;
+            font-size: 13px;
+            line-height: 15px;
+            max-width: 100%;
+            position: relative;
+            table-layout: fixed;
+            text-align: center;
+            top: 20px;
+            word-wrap: break-word;
+            z-index: 104; }
+
+/* .widget-container */
+/***=== wizard end ===***/
+/*=== small and large tabs === */
+.ux-small-tab {
+  /* .tab-container */ }
+  .ux-small-tab h6 {
+    font-size: 14px; }
+  .ux-small-tab .tab-container {
+    margin-top: 10px;
+    /* .uxd-tabswitch */ }
+    .ux-small-tab .tab-container .uxd-tabswitch {
+      padding: 5px 0px;
+      clear: both;
+      display: block;
+      width: 100%;
+      /* .lst-uxd-tabswitch */ }
+      .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch {
+        list-style: none inside;
+        font-size: 0px;
+        margin: 0px;
+        display: inline-block;
+        /* end of li */ }
+        .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li {
+          display: inline;
+          /* first-child */
+          /* last-child */
+          /* end of anchor tag */ }
+          .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li:first-child a {
+            border-radius: 5px 0px 0px 5px; }
+          .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li:last-child a {
+            border-radius: 0px 5px 5px 0px;
+            border-right: 1px solid #0051a5; }
+          .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a {
+            color: #0051a5;
+            background-color: transparent;
+            display: inline-block;
+            border: 1px solid #0051a5;
+            border-right: 0px;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 3px 25px;
+            /* .tab-selected */
+            /* end of p */ }
+            .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a.tab-selected {
+              cursor: default;
+              color: #ffffff;
+              background-color: #0051a5; }
+            .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a p {
+              margin: 0;
+              font-size: 10px; }
+
+/* .ux-small-tab */
+.ux-large-tab {
+  /* .tab-container */ }
+  .ux-large-tab h6 {
+    font-size: 14px; }
+  .ux-large-tab .tab-container {
+    margin-top: 10px;
+    /* .uxd-tabswitch */ }
+    .ux-large-tab .tab-container .uxd-tabswitch {
+      padding: 5px 0px;
+      clear: both;
+      display: block;
+      width: 100%;
+      /* .lst-uxd-tabswitch */ }
+      .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch {
+        list-style: none inside;
+        font-size: 0px;
+        margin: 0px;
+        display: inline-block;
+        /* end of li */ }
+        .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li {
+          display: inline;
+          /* first-child */
+          /* last-child */
+          /* end of anchor tag */ }
+          .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li:first-child a {
+            border-radius: 5px 0px 0px 5px; }
+          .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li:last-child a {
+            border-radius: 0px 5px 5px 0px;
+            border-right: 1px solid #0051a5; }
+          .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a {
+            color: #0051a5;
+            background-color: transparent;
+            display: inline-block;
+            border: 1px solid #0051a5;
+            border-right: 0px;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 3px 25px;
+            /* .tab-selected */
+            /* end of p */ }
+            .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a.tab-selected {
+              cursor: default;
+              color: #ffffff;
+              background-color: #0051a5; }
+            .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a p {
+              margin: 0;
+              font-size: 10px; }
+
+/* .ux-large-tab */
+/*=== small and large tabs === */
+/***=== ux-component start ===***/
+.ux-component {
+  background-color: #ffffff;
+  /*padding: 15px;*/
+  border: 1px solid #eee;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* //&>a */
+  /* //.ux-component:hover */
+  /* //.ux-comp-box */
+  /* //.ux-incomponent */
+  /* //.ux-selection */
+  /* //.ux-comp-selected */
+  /* //.ux-input */
+  /* //.ux-dropdown */
+  /* //.ux-input-dropdown */
+  /* //.ux-calendar */
+  /* //&.calendar-control */
+  /* //.component-active */
+  /* //.component-error */
+  /* //.component-warning */
+  /* //.component-success */
+  /* //.component-disabled */ }
+  .ux-component > a {
+    display: block;
+    /*&:hover .ux-selection {background-color: rgba($brand-secondary-color, .1);}*/ }
+    .ux-component > a:hover span {
+      color: rgba(0, 0, 0, 0.5); }
+    .ux-component > a:hover span i {
+      color: orange; }
+    .ux-component > a:hover em {
+      color: rgba(0, 0, 0, 0.7); }
+  .ux-component:hover span {
+    color: rgba(0, 0, 0, 0.5); }
+  .ux-component:hover span i {
+    color: orange; }
+  .ux-component:hover em {
+    color: rgba(0, 0, 0, 0.7); }
+  .ux-component .ux-comp-box {
+    padding: 15px;
+    border-left: 3px solid transparent;
+    /*&:hover {background-color: rgba($brand-secondary-color, .1);}*/
+    /*&.component-active:hover,
+    &.component-error:hover, {background-color: rgba($brand-secondary-color, .1);}*/
+    /* //span */
+    /* //em */ }
+    .ux-component .ux-comp-box span {
+      display: block;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 14px;
+      position: relative;
+      /* //i */ }
+      .ux-component .ux-comp-box span i {
+        position: absolute;
+        display: inline-block;
+        color: orange;
+        left: -7px; }
+    .ux-component .ux-comp-box em {
+      display: block;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 16px;
+      font-style: italic; }
+  .ux-component .ux-incomponent {
+    padding: 15px;
+    /* //span */
+    /* //input */
+    /* //textarea */
+    /* //&.incomp-disabled */
+    /* //&.incomp-highlight */ }
+    .ux-component .ux-incomponent span {
+      display: block;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 14px;
+      position: relative;
+      /* //i */ }
+      .ux-component .ux-incomponent span i {
+        position: absolute;
+        display: inline-block;
+        color: orange;
+        left: -7px; }
+    .ux-component .ux-incomponent input[type="text"] {
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      /*height: 22px;*/
+      border-bottom: 1px solid #0051a5;
+      color: #000000;
+      /* //&:focus */ }
+      .ux-component .ux-incomponent input[type="text"]:focus {
+        outline: none; }
+    .ux-component .ux-incomponent textarea {
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      /*height: 22px;*/
+      border-bottom: 1px solid #0051a5;
+      color: #000000;
+      /* //&:focus */ }
+      .ux-component .ux-incomponent textarea:focus {
+        outline: none; }
+    .ux-component .ux-incomponent.incomp-disabled {
+      background-color: rgba(0, 0, 0, 0.3); }
+    .ux-component .ux-incomponent.incomp-highlight {
+      background-color: rgba(0, 81, 165, 0.1); }
+  .ux-component .ux-selection {
+    padding-right: 30px;
+    font-weight: normal;
+    /* //&::after */
+    /* //&:hover */ }
+    .ux-component .ux-selection::after {
+      content: '';
+      background: url("../images/icon/back.png") no-repeat center;
+      background-size: 14px;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      margin-top: -10px;
+      zoom: 1;
+      filter: alpha(opacity=70);
+      opacity: 0.7;
+      -webkit-transform: -webkit- rotate(180deg);
+      -moz-transform: -moz- rotate(180deg);
+      -ms-transform: -ms- rotate(180deg);
+      -o-transform: -o- rotate(180deg);
+      transform: rotate(180deg);
+      -webkit-transition: -webkit-translate 0.4s ease, right 0.4s ease;
+      -moz-transition: -moz- translate 0.4s ease, right 0.4s ease;
+      -ms-transition: -ms- translate 0.4s ease, right 0.4s ease;
+      -o-transition: -o- translate 0.4s ease, right 0.4s ease;
+      transition: translate 0.4s ease, right 0.4s ease;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .ux-component .ux-selection:hover:not(.component-disabled) {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+      /* //&::after */ }
+      .ux-component .ux-selection:hover:not(.component-disabled)::after {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+        /*@include transform(rotate(180deg) translate(-4px, 0));*/
+        -webkit-transform: -webkit- rotate(180deg);
+        -moz-transform: -moz- rotate(180deg);
+        -ms-transform: -ms- rotate(180deg);
+        -o-transform: -o- rotate(180deg);
+        transform: rotate(180deg);
+        right: 2px; }
+  .ux-component .ux-comp-selected {
+    /* //em */ }
+    .ux-component .ux-comp-selected em {
+      display: block;
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 16px;
+      font-style: normal;
+      /*b {font-weight: 500;color: rgba($black, .96);}*/
+      /* -- adding extra awesome */ }
+      .ux-component .ux-comp-selected em i {
+        font-size: 80%;
+        font-style: normal;
+        padding: 4px; }
+      .ux-component .ux-comp-selected em b {
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.96);
+        display: inline-block; }
+      .ux-component .ux-comp-selected em b {
+        position: absolute;
+        right: 30px;
+        /*top: 30%;*/
+        -webkit-transform: -webkit- translate(0, -50%);
+        -moz-transform: -moz- translate(0, -50%);
+        -ms-transform: -ms- translate(0, -50%);
+        -o-transform: -o- translate(0, -50%);
+        transform: translate(0, -50%); }
+    .ux-component .ux-comp-selected span b {
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.96); }
+  .ux-component .ux-input {
+    position: relative;
+    /* //em.entered-data */
+    /* //div.enter-input */
+    /* //.component-active */ }
+    .ux-component .ux-input div.enter-input {
+      display: none;
+      padding-top: 5px;
+      /* //.txtEnteredData */
+      /* //.btn-input-done */ }
+      .ux-component .ux-input div.enter-input .txtEnteredData {
+        border: none;
+        width: 100%;
+        font-size: 16px;
+        /*height: 22px;*/
+        border-bottom: 1px solid #0051a5;
+        color: #000000;
+        /* //&:focus */ }
+        .ux-component .ux-input div.enter-input .txtEnteredData:focus {
+          outline: none; }
+      .ux-component .ux-input div.enter-input .btn-input-done {
+        position: absolute;
+        /*background-color: rgba($black, .07);*/
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        right: 20px;
+        top: 50%;
+        margin-top: -16px;
+        /* //&::after */
+        /* //&:hover */ }
+        .ux-component .ux-input div.enter-input .btn-input-done::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -11px;
+          margin-top: -8px;
+          border: 4px solid rgba(0, 188, 0, 0.9);
+          border-top: 0;
+          border-right: 0;
+          width: 22px;
+          height: 10px;
+          /*background-color: yellow;*/
+          -webkit-transform: -webkit- rotate(-45deg);
+          -moz-transform: -moz- rotate(-45deg);
+          -ms-transform: -ms- rotate(-45deg);
+          -o-transform: -o- rotate(-45deg);
+          transform: rotate(-45deg); }
+        .ux-component .ux-input div.enter-input .btn-input-done:hover {
+          /*background-color: rgba($action-success-color, .9);*/
+          /*&::after {border-color: $white;}*/
+          /* //&::after */ }
+    .ux-component .ux-input.component-active {
+      /* //em.entered-data */
+      /* //div.enter-input */ }
+      .ux-component .ux-input.component-active em.entered-data {
+        display: none; }
+      .ux-component .ux-input.component-active div.enter-input {
+        display: block; }
+  .ux-component .ux-dropdown {
+    border-left: 3px solid transparent;
+    /* //.drp-box */
+    /* //.drp-enterdata */
+    /* //.drp-showcontent */
+    /* //.ux-dropdown-content */
+    /* //&.dropdown-active */
+    /* //&.dropdown-active */
+    /* //.dropdown-error */
+    /* //&.dropdown-showing */
+    /* //&.ux-dropdown-readonly */
+    /* //&.ux-comp-selected */ }
+    .ux-component .ux-dropdown .drp-box {
+      position: relative;
+      /*padding: 15px;*/
+      padding-right: 56px; }
+    .ux-component .ux-dropdown .drp-enterdata {
+      display: block;
+      padding: 8px 15px;
+      /* //span */
+      /* //em.entered-data */
+      /* //.enter-input */ }
+      .ux-component .ux-dropdown .drp-enterdata span {
+        display: block;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        position: relative;
+        /* //i */ }
+        .ux-component .ux-dropdown .drp-enterdata span i {
+          position: absolute;
+          display: inline-block;
+          color: orange;
+          left: -7px; }
+      .ux-component .ux-dropdown .drp-enterdata em.entered-data {
+        display: block;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 16px;
+        font-style: italic; }
+      .ux-component .ux-dropdown .drp-enterdata div.enter-input {
+        display: none;
+        /* //.txtEnteredData */ }
+        .ux-component .ux-dropdown .drp-enterdata div.enter-input input {
+          border: none;
+          width: 90%;
+          font-size: 16px;
+          border-bottom: 1px solid #0051a5;
+          color: #000000;
+          /* //&:focus */ }
+          .ux-component .ux-dropdown .drp-enterdata div.enter-input input:focus {
+            outline: none; }
+    .ux-component .ux-dropdown .drp-showcontent {
+      /*position: relative;*/
+      display: block;
+      position: absolute;
+      background-color: rgba(0, 81, 165, 0.1);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 15%;
+      /* //::after */
+      /* span */ }
+      .ux-component .ux-dropdown .drp-showcontent::after {
+        background: url("../images/icon/back.png") no-repeat center;
+        transform: rotate(-90deg);
+        content: '';
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background-size: 12px;
+        position: absolute;
+        left: 90%;
+        top: 50%;
+        margin-left: -6px;
+        margin-top: -6px;
+        zoom: 1;
+        filter: alpha(opacity=70);
+        opacity: 0.7;
+        -webkit-transition: -webkit-transform 0.45s ease;
+        -moz-transition: -moz- transform 0.45s ease;
+        -ms-transition: -ms- transform 0.45s ease;
+        -o-transition: -o- transform 0.45s ease;
+        transition: transform 0.45s ease; }
+      .ux-component .ux-dropdown .drp-showcontent span {
+        position: absolute;
+        top: 20px;
+        left: 20px; }
+    .ux-component .ux-dropdown .ux-dropdown-content {
+      display: none;
+      /*padding: 15px;*/
+      /*background: rgba($brand-primary-color, .1);*/
+      /*background-color: rgba($brand-secondary-color, .1);*/
+      background: #ffffff; }
+    .ux-component .ux-dropdown.dropdown-active {
+      border-left: 3px solid #0051a5;
+      background: rgba(0, 81, 165, 0.1);
+      /* //.drp-enterdata */ }
+      .ux-component .ux-dropdown.dropdown-active .drp-enterdata em.entered-data {
+        display: none; }
+      .ux-component .ux-dropdown.dropdown-active .drp-enterdata div.enter-input {
+        display: block; }
+    .ux-component .ux-dropdown.dropdown-active {
+      border-left: 3px solid #0051a5;
+      background: #ffffff;
+      /*background: rgba($brand-secondary-color, .1);*/
+      /* //.drp-enterdata */ }
+      .ux-component .ux-dropdown.dropdown-active .drp-enterdata em.entered-data {
+        display: none; }
+      .ux-component .ux-dropdown.dropdown-active .drp-enterdata div.enter-input {
+        display: block; }
+    .ux-component .ux-dropdown.dropdown-error {
+      border-left: 3px solid rgba(188, 0, 0, 0.9);
+      background: rgba(188, 0, 0, 0.1); }
+    .ux-component .ux-dropdown.dropdown-showing .drp-showcontent {
+      /*background-color: rgba($brand-primary-color, .9);*/ }
+      .ux-component .ux-dropdown.dropdown-showing .drp-showcontent::after {
+        /*background-image: url('../images/icon/back-w.png');*/
+        transform: rotate(90deg); }
+    .ux-component .ux-dropdown.dropdown-showing .ux-dropdown-content {
+      display: block; }
+    .ux-component .ux-dropdown.ux-dropdown-readonly {
+      /* //em.entered-data */ }
+      .ux-component .ux-dropdown.ux-dropdown-readonly em {
+        display: block;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 16px; }
+    .ux-component .ux-dropdown.ux-comp-selected {
+      /*background-color: green;*/
+      /* //&.dropdown-active */
+      /* //&.ux-dropdown-readonly */ }
+      .ux-component .ux-dropdown.ux-comp-selected .drp-enterdata {
+        /* //em.entered-data */ }
+        .ux-component .ux-dropdown.ux-comp-selected .drp-enterdata em, .ux-component .ux-dropdown.ux-comp-selected .drp-enterdata em.entered-data {
+          display: block;
+          color: rgba(0, 0, 0, 0.7);
+          font-size: 16px;
+          font-style: normal; }
+      .ux-component .ux-dropdown.ux-comp-selected.dropdown-active {
+        /* //&.ux-dropdown-readonly */ }
+        .ux-component .ux-dropdown.ux-comp-selected.dropdown-active .drp-enterdata em, .ux-component .ux-dropdown.ux-comp-selected.dropdown-active .drp-enterdata em.entered-data {
+          display: none; }
+        .ux-component .ux-dropdown.ux-comp-selected.dropdown-active.ux-dropdown-readonly .drp-enterdata em, .ux-component .ux-dropdown.ux-comp-selected.dropdown-active.ux-dropdown-readonly .drp-enterdata em.entered-data {
+          display: block;
+          color: rgba(0, 0, 0, 0.7);
+          font-size: 16px;
+          font-style: normal; }
+      .ux-component .ux-dropdown.ux-comp-selected.ux-dropdown-readonly .drp-enterdata em, .ux-component .ux-dropdown.ux-comp-selected.ux-dropdown-readonly .drp-enterdata em.entered-data {
+        display: block;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 16px;
+        font-style: normal; }
+  .ux-component .ux-input-dropdown {
+    position: relative;
+    /*padding-right: 30px;*/
+    padding-right: 22px;
+    /* //em.entered-data */
+    /* //div.enter-input */
+    /* //.drp-other */
+    /* //.component-active */ }
+    .ux-component .ux-input-dropdown div.enter-input {
+      display: none;
+      padding-top: 5px;
+      /* //.txtEnteredData */
+      /* //.btn-input-done */
+      /* //&.ux-drop-ufront */ }
+      .ux-component .ux-input-dropdown div.enter-input .txtEnteredData {
+        border: none;
+        width: 100%;
+        font-size: 16px;
+        /*height: 22px;*/
+        border-bottom: 1px solid #0051a5;
+        color: #000000;
+        /* //&:focus */ }
+        .ux-component .ux-input-dropdown div.enter-input .txtEnteredData:focus {
+          outline: none; }
+      .ux-component .ux-input-dropdown div.enter-input .btn-input-done {
+        position: absolute;
+        /*background-color: rgba($black, .07);*/
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        right: 20px;
+        top: 50%;
+        margin-top: -16px;
+        /* //&::after */
+        /* //&:hover */ }
+        .ux-component .ux-input-dropdown div.enter-input .btn-input-done::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -11px;
+          margin-top: -8px;
+          border: 4px solid rgba(0, 188, 0, 0.9);
+          border-top: 0;
+          border-right: 0;
+          width: 22px;
+          height: 10px;
+          /*background-color: yellow;*/
+          -webkit-transform: -webkit- rotate(-45deg);
+          -moz-transform: -moz- rotate(-45deg);
+          -ms-transform: -ms- rotate(-45deg);
+          -o-transform: -o- rotate(-45deg);
+          transform: rotate(-45deg); }
+        .ux-component .ux-input-dropdown div.enter-input .btn-input-done:hover {
+          /*background-color: rgba($action-success-color, .9);*/
+          /*&::after {border-color: $white;}*/
+          /* //&::after */ }
+      .ux-component .ux-input-dropdown div.enter-input.ux-drop-ufront {
+        display: block; }
+    .ux-component .ux-input-dropdown .drp-other {
+      margin: 0 -15px;
+      margin-bottom: -15px;
+      display: none;
+      /*background-color: red;*/ }
+      .ux-component .ux-input-dropdown .drp-other textarea {
+        height: 80px; }
+    .ux-component .ux-input-dropdown.component-active {
+      /* //em.entered-data */
+      /* //div.enter-input */ }
+      .ux-component .ux-input-dropdown.component-active em.entered-data {
+        display: none; }
+      .ux-component .ux-input-dropdown.component-active div.enter-input {
+        display: block; }
+  .ux-component .ux-calendar {
+    position: relative;
+    /* //.cal-trigger */
+    /* //.cal-control */
+    /* //.component-active */
+    /* //.ux-comp-selected */ }
+    .ux-component .ux-calendar .cal-trigger {
+      display: block;
+      padding: 15px;
+      /*border-left: 3px solid blue;*/
+      /* //.btn-cal-trigger */
+      /* //span */
+      /* //em */
+      /* //.img-cal-trigger */
+      /* //:not */ }
+      .ux-component .ux-calendar .cal-trigger a.btn-cal-trigger {
+        display: block; }
+      .ux-component .ux-calendar .cal-trigger span {
+        display: block;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        position: relative;
+        /* //i */ }
+        .ux-component .ux-calendar .cal-trigger span i {
+          position: absolute;
+          display: inline-block;
+          color: orange;
+          left: -7px; }
+      .ux-component .ux-calendar .cal-trigger em {
+        display: block;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 16px;
+        font-style: italic;
+        /* //&.entered-data */ }
+      .ux-component .ux-calendar .cal-trigger .img-cal-trigger {
+        /*@include opacity(.8);*/
+        /*position: relative;*/
+        background: url("../images/icon/calendar.png") no-repeat center;
+        background-size: 22px;
+        /*background-image: url('../images/icon/checkbox.png');*/
+        position: absolute;
+        /*background-color: rgba($black, .07);*/
+        /*background-image: none;*/
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        right: 5px;
+        top: 50%;
+        display: none;
+        /*margin-top: -16px;*/
+        /* //img */ }
+        .ux-component .ux-calendar .cal-trigger .img-cal-trigger img {
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          right: 0;
+          top: 10px;
+          zoom: 1;
+          filter: alpha(opacity=80);
+          opacity: 0.8;
+          display: none; }
+      .ux-component .ux-calendar .cal-trigger:hover:not(.component-disabled) {
+        /*background-color: rgba($brand-secondary-color, .1);*/ }
+    .ux-component .ux-calendar .cal-control {
+      /*border-left: 3px solid red;*/
+      padding: 0 15px 15px;
+      display: none;
+      /* //.cal-input */
+      /* //.calendar-control */ }
+      .ux-component .ux-calendar .cal-control .cal-input {
+        /* //input.txtSelectDate */ }
+        .ux-component .ux-calendar .cal-control .cal-input input.txtSelectDate {
+          border: none;
+          width: 100%;
+          font-size: 16px;
+          border-bottom: 1px solid #0051a5;
+          color: #000000; }
+      .ux-component .ux-calendar .cal-control .calendar-control {
+        padding: 20px;
+        text-align: center;
+        /* //.calender-box */ }
+        .ux-component .ux-calendar .cal-control .calendar-control .calender-box {
+          display: inline-block;
+          /*margin: 0 auto;*/
+          /* //.calendar-inline */ }
+    .ux-component .ux-calendar.component-active {
+      /* //.cal-trigger */
+      /* //.entered-data */
+      /* //cal-control */
+      /* //.img-cal-trigger */ }
+      .ux-component .ux-calendar.component-active .cal-trigger {
+        /*padding-right: 30px;*/ }
+      .ux-component .ux-calendar.component-active .entered-data {
+        display: none; }
+      .ux-component .ux-calendar.component-active .cal-control {
+        display: block;
+        padding-right: 30px; }
+      .ux-component .ux-calendar.component-active .img-cal-trigger {
+        background: none; }
+        .ux-component .ux-calendar.component-active .img-cal-trigger::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -11px;
+          margin-top: -8px;
+          border: 4px solid rgba(0, 188, 0, 0.9);
+          border-top: 0;
+          border-right: 0;
+          width: 22px;
+          height: 10px;
+          /*background-color: yellow;*/
+          -webkit-transform: -webkit- rotate(-45deg);
+          -moz-transform: -moz- rotate(-45deg);
+          -ms-transform: -ms- rotate(-45deg);
+          -o-transform: -o- rotate(-45deg);
+          transform: rotate(-45deg); }
+    .ux-component .ux-calendar.ux-comp-selected {
+      /*background-color: red;*/
+      /* //.cal-trigger */ }
+      .ux-component .ux-calendar.ux-comp-selected .cal-trigger em {
+        /* //&.data-entered */ }
+        .ux-component .ux-calendar.ux-comp-selected .cal-trigger em.entered-data {
+          font-style: normal;
+          color: rgba(0, 0, 0, 0.8); }
+  .ux-component .calendar-control {
+    /*border-left: 3px solid $brand-secondary-color;
+    background: rgba($brand-secondary-color, .1);
+    padding: 0 30px 20px;
+    text-align: center;*/
+    /* //.calender-box */ }
+    .ux-component .calendar-control .calender-box {
+      /*display: inline-block;
+      margin: 0 auto;*/
+      /* //.calendar-inline */ }
+  .ux-component .component-active {
+    border-left: 3px solid #0051a5;
+    background: rgba(0, 81, 165, 0.1);
+    /* //.ux-input */ }
+    .ux-component .component-active.ux-input {
+      padding-right: 30px;
+      /* //&.ux-input-dropdown */ }
+      .ux-component .component-active.ux-input.ux-input-dropdown {
+        padding-right: 22px; }
+  .ux-component .component-error {
+    border-left: 3px solid rgba(188, 0, 0, 0.9);
+    background: rgba(188, 0, 0, 0.1); }
+  .ux-component .component-warning {
+    border-left: 3px solid rgba(235, 215, 11, 0.9);
+    background: rgba(235, 215, 11, 0.1); }
+  .ux-component .component-success {
+    border-left: 3px solid rgba(0, 188, 0, 0.9);
+    background: rgba(0, 188, 0, 0.1); }
+  .ux-component .component-disabled {
+    cursor: default;
+    border-left: 3px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1); }
+    .ux-component .component-disabled span, .ux-component .component-disabled em {
+      color: rgba(0, 0, 0, 0.4); }
+    .ux-component .component-disabled::after {
+      zoom: 1;
+      filter: alpha(opacity=30);
+      opacity: 0.3; }
+  .ux-component a:hover .component-disabled span, .ux-component a:hover .component-disabled em {
+    color: rgba(0, 0, 0, 0.4); }
+  .ux-component a:hover .component-disabled span i {
+    color: orange; }
+
+/* //.ux-component */
+/***=== ux-component end ===***/
+/*===================== common controls css END ===================*/
+
+/*# sourceMappingURL=rbcpayment-base.min.css.map */

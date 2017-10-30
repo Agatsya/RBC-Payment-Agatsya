@@ -1,0 +1,80 @@
+/* new index css start */
+
+.main {
+	background: #f0f0f0;
+	position: relative;
+}
+.left-main-column {
+	background: #f2f2f2;
+	position: relative;
+	margin-right: 200px;
+	transition: all .4s ease;
+}
+.right-main-column {
+	background: #3949AB;
+	position: fixed;
+	right: 0;
+	top: 0;bottom: 0;
+	width: 300px;
+	transition: all .4s ease;
+	z-index: 20;
+}
+
+.main.closed .left-main-column {
+  margin-right: 0;
+}
+.main.closed .right-main-column {
+  right: -300px;
+}
+
+.left-col-container {
+	max-width: 1140px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 100px 0;
+	background: green;
+}
+
+a.pin-toggle {
+	position: absolute;
+	left: -40px;
+	top: 30px;
+	background: #3949AB;
+	color: white;
+	display: inline-block;
+	padding: 0 10px;
+}
+a.pin-toggle:hover {
+  color: white;
+}
+
+header, footer {transition: all .4s ease;padding: 20px;}
+
+header {
+	background: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 200px;
+	z-index: 10;
+}
+.top-main-header {
+	width: 1140px;
+	margin: 0 auto;
+}
+.main.closed header {right: 0px;}
+
+footer {
+	background: teal;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 300px;
+	z-index: 10;
+}
+.main.closed footer {right: 0px;}
+
+header h1, footer h1 {font-size: 2em;font-weight: 100;}
+header h1 b, footer h1 b {font-weight: 400;}
+
+/* new index css end */ 

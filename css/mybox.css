@@ -1,0 +1,32 @@
+.bodywrapper {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+	min-height: 1000px;
+    overflow: hidden;
+}
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+.top-fixed-header {
+	background-color: #ccc;
+	height: 50px;
+}
+.main-right-side {
+	width: 300px;
+    background-color: maroon;
+    position: absolute;
+    height: 100%;
+    right: -300px;
+}
+.main-right-side-show {
+	right: 0;
+}
+.clickmenu {
+	position: relative;
+	right: 0;
+}
+.center-body {
+	background-color: grey;
+}
