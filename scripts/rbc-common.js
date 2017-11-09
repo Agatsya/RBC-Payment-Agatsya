@@ -122,9 +122,9 @@ $('ul.lst-uxd-tabswitch>li>a#tabbtn-OUR').on('click', function() {
 
 	$('.modal').on('shown.bs.modal', function (e) {
 		setModalHeight( $( this ) );
+
+		// need to add overflow hidden
 	});
-
-
 
 
 
@@ -160,9 +160,26 @@ $('ul.lst-uxd-tabswitch>li>a#tabbtn-OUR').on('click', function() {
 		$( this ).find( 'input.txtinsearch' ).focus();
 	});
 
+
 	//dropdown js
 
 // right side toggle menu scripts
+
+
+// table add more entry js start
+
+   	var addRow = '<tr class="addrow"><td><a href="javascript:;" class="del"></a></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>';
+	$(".add-more-entry").on("click",function(){
+		var $tableBody = $(".debit-table").find("tbody"),
+	        $trLast = $tableBody.find("tr:last");
+	        
+	    $trLast.after(addRow);
+
+	    $(".del").click(function(){
+	    	$( this ).closest(".addrow").remove();
+	    });
+	});
+// table add more entry js end
 
 
 	

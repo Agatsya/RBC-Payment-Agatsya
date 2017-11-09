@@ -8,8 +8,7 @@
 	<title>RBCPaymentDemo</title>
 
 	<!-- bootstrap 4 -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css"> --> <!-- bootstrap 4 -->
-
+	
 	<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/rbcpayment-base.min.css">
 	<link rel="stylesheet" type="text/css" href="css/rbcpayment-base.scss">
@@ -25,6 +24,11 @@
 		<!-- ============= First main column :: Start ========== -->
 		<!-- **************************************************** -->
   		<div class="left-main-column">
+  			<div class="breadcrum-container">
+  				<div class="container">
+  					Home
+  				</div><!--.container-->
+  			</div><!--.breadcrum-container-->
     		<div class="left-col-container">
 				<header>
 					<div class="container">
@@ -96,247 +100,113 @@
 
 					<div class="row">
 						<div class="col-md-12 col-sm-12">
-							<!-- ======== control of small tabs start =========-->
-							<div class="ux-small-tab">
-							<h6>Payment Type</h6>
-							<div class="tab-container">
-								<div class="uxd-tabswitch">
-									<ul class="lst-uxd-tabswitch">
-										<li>
-											<a href="javascript:;" class="tab-selected" id="tabbtn-encryption">Private Individual</a>
-										</li>
-										<li>
-											<a href="javascript:;" id="tabbtn-decryption">Financial Institution</a>
-										</li>
-									</ul><!--.lst-uxd-tabswitch-->
-									<div class="vgap10"></div><!--.vgap10-->
-							
-									<div class="uxd-tabcontent">
-										<div id="tabcontent-encryption">
-											<div class="reports-data">
-												<div class="row">
-													<div class="col-sm-12">
-														This is the Private individual section
-													</div><!--.col-xs-12-->
-												</div><!--.row-->
-											</div><!--.reports-data-->
-										</div><!--#tabcontent-encryption-->
-										<div id="tabcontent-decryption" style="display:none;">
-											<div class="reports-data">
-												<div class="row">
-													<div class="col-sm-12">
-														This is the Financial institute section
-													</div><!--.col-xs-12-->
-												</div><!--.row-->
-											</div><!--.reports-data-->
-										</div><!--#tabcontent-decryption-->
-									</div><!--.uxd-tabcontent-->
-								</div><!--.uxd-tabswitch-->
-							</div> <!-- .tab-container -->
-						</div> <!-- .ux-small-tab -->
-							<!-- ======== control of small tabs end =========-->
-						</div> <!-- col-md-12 col-sm-12 -->
-					</div>
-
-					<div class="vspacer10"></div>
-					
-					<div class="row">
-						<div class="col-md-12 col-sm-12">
-							<div class="ux-component">
-								<a href="javascript:;" data-toggle="modal" data-target="#Modal-pop1">
-									<div class="ux-selection ux-comp-box ux-comp-selected">
-										<span>From</span>
-										<em class="entered-data">Select Debit Amount</em>
-									</div> <!-- ux-comp-selected -->
-								</a> <!-- end of anchor tag -->
-							</div> <!-- ux-component -->
-							<div class="ux-component">
-								<a href="javascript:;">
-									<div class="ux-input ux-comp-box">
-										<span><i>*</i>Amount (GBP)</span>
-										<em class="entered-data">Enter Amount</em>
-										<div class="enter-input">
-											<input type="text" class="txtEnteredData" name="" value="5000" placeholder="Enter amount here">
-										</div><!--.enter-input-->
-									</div><!--.ux-selection-->
-								</a> <!-- end of anchor tag -->
-							</div> <!-- ux-component -->
-						</div> <!-- col-md-12 col-sm-12 -->
-					</div><!--.row-->
-
-					<div class="vspacer10"></div>
-
-					<div class="row">
-						<div class="col-md-12 col-sm-12">
 							<div class="center-heading">
-								<div class="bank-details">
-									<h5>Bank Details</h5>
-								</div><!--.bank-details-->
+								<h5>Summary</h5>
 							</div><!--.center-heading-->
-							<!-- country popup start -->
-								<div class="ux-component">
-									<a href="javascript:;" data-toggle="modal" data-target="#Modal-selectcountry">
-										<div class="ux-selection ux-comp-box  ux-comp-selected">
-											<span>Beneficiary Bank Country</span>
-											<em>United Kingdom</em>
-										</div><!--.ux-selection-->
-									</a>
-								</div>
-							<!-- country popup end -->
-						</div><!--.col-md-12 col-sm-12-->
-					</div><!--.row-->
-
-					<div class="vspacer10"></div>
-
-					<div class="row">
-						<div class="col-md-12 col-sm-12">
-							<!-- ======== control of large tabs start =========-->
-							<div class="ux-large-tab">
-								<h6>How would you like to identify the bank where the account is held?</h6>
-								<div class="tab-container">
-									<div class="uxd-tabswitch">
-										<ul class="lst-uxd-tabswitch">
-											<li>
-												<a href="javascript:;" class="tab-selected" id="tabbtn-swift-bic">
-												Use SWIFT/BIC
-													<p>Text not visible</p>
-												</a>
-											</li>
-											<li>
-												<a href="javascript:;" id="tabbtn-uk-sortcode">Use UK Sort Code
-													<p>Functional Clearing Code</p>
-												</a>
-											</li>
-										</ul><!--.lst-uxd-tabswitch-->
-										<div class="vgap10"></div><!--.vgap10-->
-								
-										<div class="uxd-tabcontent">
-											<div id="tabcontent-swift-bic">
-												<div class="reports-data">
-													<div class="row">
-														<div class="col-sm-12">
-															This is Swift bic code section
-															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-															</p>
-														</div><!--.col-xs-12-->
-													</div><!--.row-->
-												</div><!--.reports-data-->
-											</div><!--#tabcontent-encryption-->
-											<div id="tabcontent-uk-sortcode" style="display:none;">
-												<div class="reports-data">
-													<div class="row">
-														<div class="col-sm-12">
-															This is UK sort code section
-															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-															</p>
-														</div><!--.col-xs-12-->
-													</div><!--.row-->
-												</div><!--.reports-data-->
-											</div><!--#tabcontent-decryption-->
-										</div><!--.uxd-tabcontent-->
-									</div><!--.uxd-tabswitch-->
-								</div> <!-- .tab-container -->
-							</div>
-							<!-- ======== control of large tabs end ===========-->
-						</div> <!-- col-md-12 col-sm-12 -->
-					</div>
-
-					<div class="vspacer10"></div>
-
-					<div class="row">
-						<div class="col-md-12 col-sm-12">
-							<!-- sort code start -->
 							<div class="ux-component">
-								<a href="javascript:;" data-toggle="modal" data-target="#Modal-sortcode">
-									<div class="ux-selection ux-comp-box ux-comp-selected">
-										<span>Sort Code</span>
-										<em class="entered-data">Select/ Enter Sort Code</em>
-									</div><!--.ux-selection-->
-								</a>
-							</div>
-							<!-- sort code end -->
+								<div class="ux-validation">
+									<h6>VALIDATIONS</h6>
+									<ul class="lst-validations">
+										<li>
+											<a href="javascript:;">
+												The destination country for this payment,"Erentica" is sanctioned country
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												If necessary please discuss this transaction with Risk Management and Compliance
+											</a>
+										</li>
+									</ul><!--.lst-validations-->
+								</div>	
+							</div><!--.ux-component-->
 
-							<!-- sortcode details component start -->
-							<div class="ux-component">
-								<div class="ux-dropdown">
-									<div class="drp-box">
-										<a href="javascript:;" class="drp-enterdata">
-											<span>Sort Code</span>
-											<em class="entered-data">5545</em>
-											<div class="enter-input">
-												<input type="text" class="txtEnteredAddress" name="" placeholder="Enter address here">
-												<u class="btn-input-done"></u>
-											</div><!--.enter-input-->
-										</a>
-										<a href="javascript:;" class="drp-showcontent">
-											<span>Sort Code Details</span>
-										</a>
-									</div><!--.drp-box-->
-									<div class="ux-dropdown-content">
-									<div class="row">
-										<div class="col-md-9 col-sm-9">
-											<div class="row">
-												<div class="col-md-4 col-sm-4">
-													<div class="ux-incomponent">
-														<span>Bank Name</span>
-														<em>Lloyds Bank International Limited</em>
-													</div> <!-- ux-incomponent -->
-												</div> <!-- col-md-4 col-sm-4 -->
-												<div class="col-md-4 col-sm-4">
-													<div class="ux-incomponent">
-														<span>Branch</span>
-														<em>St. Helier</em>
-													</div> <!-- ux-incomponent -->
-												</div> <!-- col-md-4 col-sm-4 -->
-												<div class="col-md-4 col-sm-4">
-													<div class="ux-incomponent">
-														<span>City</span>
-														<em>St. Helier</em>
-													</div> <!-- ux-incomponent -->
-												</div> <!-- col-md-4 col-sm-4 -->
-											</div> <!-- row -->
-											<div class="row">
-												<div class="col-md-4 col-sm-4">
-													<div class="ux-incomponent">
-														<span>Address</span>
-														<em>9 Broad Street,</em>
-														<em>P.O.Box 10, St.Helier</em>
-													</div> <!-- ux-incomponent -->
-												</div> <!-- col-md-4 col-sm-4 -->
-												<div class="col-md-4 col-sm-4">
-													<div class="ux-incomponent">
-														<span>Postal Code</span>
-														<em>JE4 8XW</em>
-													</div> <!-- ux-incomponent -->
-												</div> <!-- col-md-4 col-sm-4 -->
-												<div class="col-md-4 col-sm-4">
-													<div class="ux-incomponent">
-														<span>Country</span>
-														<em>Jersey</em>
-													</div> <!-- ux-incomponent -->
-												</div> <!-- col-md-4 col-sm-4 -->
-											</div> <!-- row -->
-										</div> <!-- col-md-9 col-sm-9 -->
-										<div class="col-md-3 col-sm-3">
-											<div class="row">
-												<div class="col-md-12 col-sm-12">
-													<div>
-														logo
-													</div>	
-												</div> <!-- col-md-12 col-sm-12 -->
-											</div> <!-- row -->
-										</div> <!-- col-md-3 col-sm-3 -->
-									</div><!--.row-->
-									<div class="vspacer10"></div><!--.vspacer10-->
-								</div><!--.ux-dropdown-content-->
-								</div><!--.ux-dropdown-->
-							</div>
-							<!-- sortcode details component end -->
 						</div> <!-- col-md-12 col-sm-12 -->
 					</div> <!-- row -->
 
+					<div class="vspacer10"></div>
+
+					<div class="ux-component ux-comp-summary">
+						<div class="row">
+							<div class="col-md-12 col-sm-12">
+								<h6>Workflow Notes</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div><!--.col-md-12 col-sm-12-->
+						</div><!--.row-->
+					</div><!--.ux-component-->
+					
+					<div class="vspacer10"></div>
+
+					<div class="ux-component ux-comp-summary">
+						<h6>Transaction Details </h6>
+						<div class="vspacer10"></div>
+						<div class="row">
+							<div class="col-md-3 col-sm-3">
+								<em>Payment Type</em>
+								<span>MT103- UK Domestic</span>
+							</div><!--.col-md-3 col-sm-3-->
+							<div class="col-md-3 col-sm-3">
+								<em>Statement Narrative</em>
+								<span>Payment To</span>
+							</div><!--.col-md-3 col-sm-3-->
+							<div class="col-md-3 col-sm-3">
+								<em>Value Date</em>
+								<span>10-10-2017</span>
+							</div><!--.col-md-3 col-sm-3-->
+							<div class="col-md-3 col-sm-3">
+								<em>Nominal Offset</em>
+								<span>-</span>
+							</div><!--.col-md-3 col-sm-3-->
+						</div><!--.row-->
+
+						<div class="vspacer10"></div>
+
+						<div class="row">
+							<div class="col-md-3 col-sm-3">
+								<em>Amount</em>
+								<span>1,00,000</span>
+							</div><!--.col-md-3 col-sm-3-->
+							<div class="col-md-3 col-sm-3">
+								<em>Client Number</em>
+								<span>-</span>
+							</div><!--.col-md-3 col-sm-3-->
+							<div class="col-md-3 col-sm-3">
+								<em>From Account</em>
+								<span>-</span>
+							</div><!--.col-md-3 col-sm-3-->
+							<div class="col-md-3 col-sm-3">
+								<em>Client Name</em>
+								<span>-</span>
+							</div><!--.col-md-3 col-sm-3-->
+						</div><!--.row-->
+
+						<div class="vspacer10"></div>
+
+						<div class="row">
+							<div class="col-md-3 col-sm-3">
+								<em>Submitted By</em>
+								<span>-</span>
+							</div><!--.col-md-3 col-sm-3-->
+							<div class="col-md-3 col-sm-3">
+								<em>Templated</em>
+								<span>Yes</span>
+							</div><!--.col-md-3 col-sm-3-->
+							<div class="col-md-3 col-sm-3">
+								<em>Submit Date</em>
+								<span>-</span>
+							</div><!--.col-md-3 col-sm-3-->
+							<div class="col-md-3 col-sm-3">
+								<em>Designation</em>
+								<span>-</span>
+							</div><!--.col-md-3 col-sm-3-->
+						</div><!--.row-->
+					</div><!--.ux-component-->
+					
 					<div class="vspacer10"></div>
 
 					<div class="row">
@@ -361,7 +231,7 @@
 		        		<div class="row">
 			        		<div class="col-md-12 col-sm-12">
 			        			<button class="btn btn-basic">Cancel</button>
-			        			<button class="btn btn-primary pull-right">Continue</button>
+			        			<button class="btn btn-primary pull-right" data-toggle="modal" data-target="#Modal-summary">Pay now</button>
 			        		</div><!--.col-md-12 col-sm-12-->
 		        		</div> <!-- row -->
 		        	</div><!--.container-->
@@ -1360,8 +1230,7 @@
 			<!--============================ Bookeeping Modal End =========================================== -->
 			<!-- ********************************************************************************************** -->
 
-
-
+			
 			<!-- ********************************************************************************************** -->
 			<!-- ============================ All popup End Here ======================================== -->
 			<!-- ********************************************************************************************** -->

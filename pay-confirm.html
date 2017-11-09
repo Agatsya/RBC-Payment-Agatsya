@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>RBCPaymentDemo</title>
+
+	<!-- bootstrap 4 -->
+	
+	<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/rbcpayment-base.min.css">
+	<link rel="stylesheet" type="text/css" href="css/rbcpayment-base.scss">
+
+</head>
+<body>
+	<!-- **************************************************** -->
+	<!-- ================== Main Page :: Start ============== -->
+	<!-- **************************************************** -->
+
+	<div class="main">
+		<!-- **************************************************** -->
+		<!-- ============= First main column :: Start ========== -->
+		<!-- **************************************************** -->
+  		<div class="left-main-column">
+    		<div class="left-col-container">
+				<header>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="logo">
+									<img src="images/logo/rbc-wm-logo.png">
+								</div><!--.logo-->
+							</div><!--.col-md-6 col-sm-6-->
+							<div class="col-md-6 col-sm-6">
+								<div class="text-right">
+									<span>Hi, Jack</span>
+									<h3>Third Party Payment</h3>
+								</div> <!-- .user-name -->
+							</div><!--.col-md-6 col-sm-6-->
+						</div><!--.row-->
+					</div><!-- container -->
+				</header> <!-- header -->
+      			<div class="container-fluid">
+			        
+			        <div class="vspacer10"></div>
+
+			        <div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="center-heading">
+								<h5>Confirmation</h5>
+							</div><!--.center-heading-->
+							<div class="confirmation-box">
+								<div class="cnf-container">
+									<div class="cnf-icon">	
+										<span><img src="images/icon/checked.png"></span>
+									</div><!--.cnf-icon-->
+									<div class="cnf-heading">
+										<h4>Payment Request Confirmation</h4>
+									</div><!--.cnf-heading -->
+									<div class="cnf-content">
+										<p>Thank you - we have received your request.<br/>Your reference is: <a href="javascript:;">CTR05248871862120</a></p>
+									</div><!--.cnf-content -->
+								</div><!--.cnf-container-->
+							</div><!--.confirmation-box-->
+
+							<div class="vspacer50"></div>
+							
+							<div class="cnf-pay-actions">
+								<a href="javascript:;">Make Another Payment</a>
+			        			<button class="btn btn-primary pull-right" data-toggle="modal" data-target="#Modal-summary">Go to Account Summary</button>
+							</div> <!-- cnf-pay-actions -->
+						</div> <!-- col-md-12 col-sm-12 -->
+					</div> <!-- row -->
+
+					<div class="vspacer10"></div>
+
+				</div> <!-- container-fluid -->
+		    </div> <!-- left-col-container -->
+
+  		</div> <!-- left-main-column -->
+  		<!-- **************************************************** -->
+		<!-- ============= First main column :: End ============= -->
+		<!-- **************************************************** -->
+
+  		<!-- **************************************************** -->
+		<!-- ============= Second main column :: Start ========== -->
+		<!-- **************************************************** -->
+  		<div class="right-main-column">
+    		<a href="javascript:;" class="pin-toggle">
+    			<span></span>
+    		</a>
+    		<div class="sidebar">
+    			<div class="recent-clients">
+					<h6>Recent Clients</h6>
+					<div class="ux-component">
+						<a href="javascript:;">
+							<div class="ux-input-dropdown ux-comp-box">
+								<div class="enter-input ux-drop-ufront">
+									<div class="ux-select-box select-list">
+										<select class="sel-account-statement">
+											<option>5000765</option>
+											<option>5123445</option>
+											<option>5545542</option>
+											<option>5872453</option>
+										</select>
+										<!-- select box -->
+									</div><!--.enter-input .ux-select-box-->
+								</div><!--.enter-input-->
+							</div><!--.ux-selection-->
+						</a>
+					</div> <!-- ux-component -->
+					<a href="javascript:;" class="browse-all">Browse All Clients</a>
+				</div> <!-- recent-clients -->
+				<div class="right-container">
+					<div class="right-slide">
+						<a href="#" class="arrow-toggle">
+							<h6 class="panel-title">
+								<span class="client-link"></span>
+								<em>Client Links</em>	
+							</h6>
+							<i></i>
+						</a> <!-- arrow-toggle -->
+						<div class="right-slide-child">
+				      		<div class="card-body">
+					        	<ul>
+									<li>
+										<a href="javascript:;">My Work</a>
+									</li>
+									<li>
+										<a href="javascript:;">New Requests</a>
+									</li>
+									<li>
+										<a href="javascript:;">Reports</a>
+									</li>
+								</ul> <!-- end of ul -->
+					      	</div> <!-- .card-body -->
+				      	</div> <!-- right-slide-child -->
+				    </div> <!-- right-slide -->
+				    <div class="right-slide arrow-updown">
+				    	<a href="#" class="arrow-toggle">
+				      		<h6 class="panel-title">
+				      			<span class="workspace"></span>
+				      			<em>Workspace</em>
+				      		</h6>
+				      		<i></i>
+				        </a> <!-- arrow-toggle -->
+						<div class="right-slide-child">
+				      		<div class="card-body">
+					        	<ul>
+					        		<li>
+					        			<a href="javascript:;">Work 1</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">Work 2</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">Work 3</a>
+					        		</li>
+					        	</ul> <!-- end of ul -->	
+					      	</div> <!-- .card-body -->
+				      	</div> <!-- right-slide-child -->
+				    </div> <!-- right-slide -->
+				    <div class="right-slide">
+				    	<a href="#" class="arrow-toggle">
+				    		<h6 class="panel-title">
+				    			<span class="fileupload"></span>
+				    			<em>File Upload</em>	
+				    		</h6>
+				    		<i></i>
+				    	</a> <!-- arrow-toggle -->
+						<div class="right-slide-child"> 
+				      		<div class="card-body">
+					       		<ul>
+					        		<li>
+					        			<a href="javascript:;">File 1</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">File 2</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">File 3</a>
+					        		</li>
+					        	</ul> <!-- end of ul -->
+					      	</div> <!-- .card-body -->
+				      	</div> <!-- right-slide-child -->
+				    </div> <!-- right-slide -->
+				    <div class="right-slide">
+				    	<a href="#" class="arrow-toggle">
+				      		<h6 class="panel-title">
+				      			<span class="admin"></span>
+				      			<em>Administration</em>	
+				      		</h6>
+				      		<i></i>
+				        </a> <!-- arrow-toggle -->
+						<div class="right-slide-child">
+				      		<div class="card-body">
+						        <ul>
+					        		<li>
+					        			<a href="javascript:;">Admin 1</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">Admin 2</a>
+					        		</li>
+					        		<li>
+					        			<a href="javascript:;">Admin 3</a>
+					        		</li>
+					        	</ul> <!-- end of ul -->
+					      	</div> <!-- .card-body -->
+				      	</div> <!-- right-slide-child -->
+				    </div> <!-- right-slide -->
+				</div> <!-- right-container -->
+    		</div><!--.sidebar-->
+
+  		</div> <!-- right-main-column -->
+  		<!-- **************************************************** -->
+		<!-- ============= Second main column :: End ============ -->
+		<!-- **************************************************** -->
+	</div> <!-- main end -->
+	<!-- **************************************************** -->
+	<!-- ================== Main Page :: End ================ -->
+	<!-- **************************************************** -->
+
+
+	<script type="text/javascript" src="scripts/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/lib/popper.min.js"></script>
+	<script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/rbc-common.js"></script>
+
+	<script type="text/javascript">
+		$('a.pin-toggle').on('click', function(){
+			$('.main').toggleClass('closed');
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".nav_trigger").click(function() {
+				$("body").toggleClass("show_sidebar");
+				$(".nav_trigger .fa").toggleClass("fa-navicon fa-times"); 
+			});
+
+
+			//script for arrow toggle start
+			$(".right-slide .arrow-toggle").click(function(event) {
+
+				if (!$(this).parent(".right-slide").hasClass('slide-active')){
+					$(".right-slide").removeClass('slide-active');
+				}
+				if (!$(this).parent(".right-slide").hasClass('slide-active')){
+					$(this).parent(".right-slide").addClass('slide-active');
+					$('.right-slide-child').slideUp();
+					$(".right-slide").children('.right-slide-child').slideUp();
+					$(this).parent(".right-slide").children('.right-slide-child').slideDown();
+				}
+				else if ($(this).parent(".right-slide").hasClass('slide-active'))
+				{
+					$(this).parent(".right-slide").removeClass('slide-active');
+					$('.right-slide-child').slideUp();
+				}
+			});
+			//script for arrow toggle end
+		});
+	</script>
+	
+</body>
