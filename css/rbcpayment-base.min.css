@@ -65,7 +65,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   direction: ltr;
   text-align: left;
-  font-family: "Segoe UI";
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   position: relative;
   background-color: #f2f2f2; }
 
@@ -564,14 +564,14 @@ em {
 				Global Header and Footer :: Start
 ------------------------------------------------------------------ */
 header {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   position: fixed;
   left: 0;
   top: 0;
   right: 300px;
-  z-index: 10;
+  z-index: 990;
   transition: all .4s ease;
-  padding: 20px;
+  padding: 20px 0 0 0;
   /* end of h1 */
   /* logo */ }
   header h1 {
@@ -584,6 +584,9 @@ header {
     /* end of img tag */ }
     header .logo img {
       height: 40px; }
+  header .user-profile {
+    position: relative;
+    top: -14px; }
 
 /* header */
 footer {
@@ -636,14 +639,17 @@ footer {
       padding: 100px 0; }
     .main .left-main-column .breadcrum-container {
       background-color: #dcdcdc;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      right: 0;
-      width: 100%;
       color: #000;
       z-index: 999;
-      padding: 10px 0; }
+      padding: 10px 0;
+      /* container */ }
+      .main .left-main-column .breadcrum-container .container {
+        /* breadcrumb */ }
+        .main .left-main-column .breadcrum-container .container .breadcrumb {
+          padding: 0;
+          margin: 0;
+          background-color: transparent;
+          border-radius: 0; }
   .main .right-main-column {
     background: #42494f;
     position: fixed;
@@ -652,7 +658,7 @@ footer {
     bottom: 0;
     width: 300px;
     transition: all .4s ease;
-    z-index: 20;
+    z-index: 992;
     /* .pin-toggle */
     /* sidebar */ }
     .main .right-main-column a.pin-toggle {
@@ -885,7 +891,7 @@ footer {
         .main-pager .table-item .data-item .di-more em {
           color: rgba(0, 0, 0, 0.9); }
         .main-pager .table-item .data-item .di-more.di-more-active {
-          background-color: rgba(0, 81, 165, 0.9);
+          background-color: rgba(0, 39, 80, 0.9);
           /* &::after */
           /* em */ }
           .main-pager .table-item .data-item .di-more.di-more-active::after {
@@ -897,13 +903,13 @@ footer {
         /* .di-heading */
         /*.di-more*/ }
         .main-pager .table-item .data-item.data-item-selected .di-heading {
-          background-color: #0051a5;
+          background-color: #002750;
           color: #ffffff;
           /* em */ }
           .main-pager .table-item .data-item.data-item-selected .di-heading em {
             color: #ffffff; }
         .main-pager .table-item .data-item.data-item-selected .di-more {
-          background-color: #0051a5;
+          background-color: #002750;
           /* em */
           /* &::after */ }
           .main-pager .table-item .data-item.data-item-selected .di-more em {
@@ -917,11 +923,11 @@ footer {
             display: inline-block;
             background-size: 12px; }
     .main-pager .table-item .title-seperator {
-      border-bottom: 1px solid rgba(0, 81, 165, 0.3);
+      border-bottom: 1px solid rgba(0, 39, 80, 0.3);
       margin: 5px 0; }
     .main-pager .table-item .data-content {
       /*padding: 10px 20px;*/
-      color: #0051a5;
+      color: #002750;
       /*border-top: 3px solid  $brand-primary-color;
       background-color: rgba( $brand-primary-color, 0.1);*/
       /*font-size: 12px;*/
@@ -937,10 +943,10 @@ footer {
       /*.acc-container*/
       /* //.dc-expanded */ }
       .main-pager .table-item .data-content .data-list {
-        color: #0051a5;
+        color: #002750;
         padding: 10px 20px;
-        border-top: 3px solid #0051a5;
-        background-color: rgba(0, 81, 165, 0.1);
+        border-top: 3px solid #002750;
+        background-color: rgba(0, 39, 80, 0.1);
         margin: 0 1px;
         /* //.acc-left */
         /*.acc-right*/ }
@@ -1014,7 +1020,7 @@ footer {
       background-color: rgba(0, 0, 0, 0.1);
       /* &.active */ }
       .pagination-container .indicator-box .indicator.active {
-        background-color: #0051a5; }
+        background-color: #002750; }
   .pagination-container .pagination-nav {
     padding-left: 0;
     margin: 0;
@@ -1043,7 +1049,7 @@ footer {
         border-radius: 0;
         /* //&:hover */ }
         .pagination-container .pagination-nav span.page-item a.page-link:hover {
-          background: #0051a5 url("../images/icon/back-w.png") no-repeat center;
+          background: #002750 url("../images/icon/back-w.png") no-repeat center;
           background-size: 18px;
           padding: 20px;
           width: 24px; }
@@ -1176,7 +1182,7 @@ footer {
           /* //tr:hover td */ }
           .tabular-data .dt-content .table-data .table.table-clickable tr:hover td {
             cursor: pointer;
-            background-color: rgba(0, 81, 165, 0.9);
+            background-color: rgba(0, 39, 80, 0.9);
             color: #ffffff;
             /* //em, span, b */ }
             .tabular-data .dt-content .table-data .table.table-clickable tr:hover td em, .tabular-data .dt-content .table-data .table.table-clickable tr:hover td span, .tabular-data .dt-content .table-data .table.table-clickable tr:hover td b {
@@ -1251,7 +1257,7 @@ footer {
         right: 0;
         top: 0;
         bottom: 0;
-        background-color: rgba(0, 81, 165, 0.4);
+        background-color: rgba(0, 39, 80, 0.4);
         z-index: 2;
         display: none;
         /* //.progress-spinner */ }
@@ -1272,7 +1278,7 @@ footer {
             -ms-border-radius: 100%;
             border-radius: 100%;
             border: 2px solid transparent;
-            border-top: 2px solid #0051a5;
+            border-top: 2px solid #002750;
             border-bottom: 2px solid #0051a5;
             -webkit-animation: spinner 2s linear infinite;
             /* Safari 4+ */
@@ -1363,7 +1369,7 @@ footer {
             -o-backface-visibility: hidden;
             backface-visibility: hidden; }
           .tabular-data .dt-content .table-data.table-clickable .table-row:hover {
-            background-color: rgba(0, 81, 165, 0.9);
+            background-color: rgba(0, 39, 80, 0.9);
             color: #ffffff;
             /* //&::after */ }
             .tabular-data .dt-content .table-data.table-clickable .table-row:hover::after {
@@ -1374,7 +1380,7 @@ footer {
               -o-transform: -o- rotate(180deg) translate(-5px, 0);
               transform: rotate(180deg) translate(-5px, 0); }
           .tabular-data .dt-content .table-data.table-clickable .table-row.tr-selected {
-            background-color: rgba(0, 81, 165, 0.9);
+            background-color: rgba(0, 39, 80, 0.9);
             color: #ffffff; }
       .tabular-data .dt-content .table-data.table-noarrow {
         /* //&.table-row */ }
@@ -1477,12 +1483,12 @@ footer {
       /* card-block */ }
       .bookkeeping-data .dt-content .card .card-block {
         padding: 0;
-        border-left: 5px solid #0051a5;
+        border-left: 5px solid #002750;
         /* card-title */ }
         .bookkeeping-data .dt-content .card .card-block .card-title {
           color: #ffffff;
           padding: 8px 15px;
-          background-color: #0051a5;
+          background-color: #002750;
           margin: 0; }
         .bookkeeping-data .dt-content .card .card-block .tab-debit-container {
           overflow: auto;
@@ -1523,8 +1529,8 @@ footer {
   cursor: pointer; }
 
 .btn-primary {
-  background-color: #0051a5;
-  border-color: #0051a5; }
+  background-color: #002750;
+  border-color: #002750; }
 
 /* btn-primary */
 /* btn-basic */
@@ -1626,7 +1632,7 @@ footer {
   /* end of anchor */ }
   .cnf-pay-actions a {
     font-size: 16px;
-    color: #0051a5;
+    color: #002750;
     font-weight: 500;
     text-transform: uppercase; }
 
@@ -1676,7 +1682,7 @@ footer {
             /* .step */
             /* .title */ }
             .widget-container .wizard-form .form-bootstrapWizard .bootstrapWizard li.active .step {
-              background-color: #0051a5;
+              background-color: #002750;
               color: #fff;
               font-weight: 700;
               padding: 0px 30px;
@@ -1742,12 +1748,12 @@ footer {
             border-radius: 5px 0px 0px 5px; }
           .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li:last-child a {
             border-radius: 0px 5px 5px 0px;
-            border-right: 1px solid #0051a5; }
+            border-right: 1px solid #002750; }
           .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a {
-            color: #0051a5;
+            color: #002750;
             background-color: transparent;
             display: inline-block;
-            border: 1px solid #0051a5;
+            border: 1px solid #002750;
             border-right: 0px;
             font-size: 14px;
             font-weight: normal;
@@ -1757,7 +1763,7 @@ footer {
             .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a.tab-selected {
               cursor: default;
               color: #ffffff;
-              background-color: #0051a5; }
+              background-color: #002750; }
             .ux-small-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a p {
               margin: 0;
               font-size: 10px; }
@@ -1791,12 +1797,12 @@ footer {
             border-radius: 5px 0px 0px 5px; }
           .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li:last-child a {
             border-radius: 0px 5px 5px 0px;
-            border-right: 1px solid #0051a5; }
+            border-right: 1px solid #002750; }
           .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a {
-            color: #0051a5;
+            color: #002750;
             background-color: transparent;
             display: inline-block;
-            border: 1px solid #0051a5;
+            border: 1px solid #002750;
             border-right: 0px;
             font-size: 14px;
             font-weight: normal;
@@ -1806,7 +1812,7 @@ footer {
             .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a.tab-selected {
               cursor: default;
               color: #ffffff;
-              background-color: #0051a5; }
+              background-color: #002750; }
             .ux-large-tab .tab-container .uxd-tabswitch .lst-uxd-tabswitch li a p {
               margin: 0;
               font-size: 10px; }
@@ -2101,8 +2107,7 @@ footer {
     /* //&.ux-comp-selected */ }
     .ux-component .ux-dropdown .drp-box {
       position: relative;
-      /*padding: 15px;*/
-      padding-right: 56px; }
+      padding-right: 140px; }
     .ux-component .ux-dropdown .drp-enterdata {
       display: block;
       padding: 8px 15px;
@@ -2130,7 +2135,7 @@ footer {
         /* //.txtEnteredData */ }
         .ux-component .ux-dropdown .drp-enterdata div.enter-input input {
           border: none;
-          width: 90%;
+          width: 100%;
           font-size: 16px;
           border-bottom: 1px solid #0051a5;
           color: #000000;
@@ -2145,7 +2150,8 @@ footer {
       top: 0;
       right: 0;
       bottom: 0;
-      width: 15%;
+      width: 140px;
+      padding-right: 20px;
       /* //::after */
       /* span */ }
       .ux-component .ux-dropdown .drp-showcontent::after {
@@ -2170,9 +2176,9 @@ footer {
         -o-transition: -o- transform 0.45s ease;
         transition: transform 0.45s ease; }
       .ux-component .ux-dropdown .drp-showcontent span {
-        position: absolute;
-        top: 20px;
-        left: 20px; }
+        display: block;
+        padding-top: 10px;
+        padding-left: 15px; }
     .ux-component .ux-dropdown .ux-dropdown-content {
       display: none;
       /*padding: 15px;*/

@@ -15,7 +15,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	direction: ltr;text-align: left;
-	font-family: "Segoe UI";
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	position: relative;
 	background-color: #f2f2f2;
 }
@@ -44,7 +44,7 @@ li {list-style-type: none;	}
 /* -- base colors */
 $white : #ffffff;
 $black : #000000;
-$brand-primary-color : #0051a5; /* // -- RBC - Dark Blue */
+$brand-primary-color : rgb(0, 39, 80); /* // -- RBC - Dark Blue */
 $brand-secondary-color : rgb(0, 81, 165); /* // -- RBC - Blue */
 
 
@@ -383,13 +383,14 @@ em {font-style: normal;}
 				Global Header and Footer :: Start
 ------------------------------------------------------------------ */
 header {
-	background: #fff;
+	background: rgba(255,255,255,.9);
 	position: fixed;
 	left: 0;
 	top: 0;
 	right: 300px;
-	z-index: 10;
-	transition: all .4s ease;padding: 20px;
+	z-index: 990;
+	transition: all .4s ease;
+	padding: 20px 0 0 0;
 	h1 {
 		font-size: 2em;
 		font-weight: 100;
@@ -402,6 +403,10 @@ header {
 				height: 40px;
 			} /* end of img tag */
 		} /* logo */
+	.user-profile {
+		position: relative;
+		top: -14px;
+	}
 } /* header */
 
 footer {
@@ -450,14 +455,17 @@ footer {
 
 		.breadcrum-container {
 			background-color: #dcdcdc;
-		    position: absolute;
-		    top: 70px;
-		    left: 0;
-		    right: 0;
-		    width: 100%;
 		    color: #000;
 		    z-index: 999;
 		    padding: 10px 0;
+		    .container {
+		    	.breadcrumb	 {
+		    		padding: 0;
+		    		margin: 0;
+		    		background-color: transparent;
+		    		border-radius: 0;
+		    	} /* breadcrumb */
+		    } /* container */
 		} /* breadcrum-container */
 
 	} /* left-main-column */
@@ -471,12 +479,12 @@ footer {
 		top: 0;bottom: 0;
 		width: 300px;
 		transition: all .4s ease;
-		z-index: 20;
+		z-index: 992;
 		a.pin-toggle {
 			position: absolute;
 			left: -38px;
 			top: 0;
-			background: $brand-primary-color;
+			background: $brand-secondary-color;
 			color: white;
 			display: inline-block;
 			padding: 10px;
@@ -1565,10 +1573,10 @@ footer {
 						}
 			    	} /* last-child */
 					a {
-						color: #0051a5;
+						color: $brand-primary-color;
 						background-color: transparent;
 						display: inline-block;
-						border: 1px solid #0051a5;
+						border: 1px solid $brand-primary-color;
 						border-right: 0px;
 						font-size: 14px;
 						font-weight: normal;
@@ -1576,7 +1584,7 @@ footer {
 						&.tab-selected {
 							cursor: default;
 							color: #ffffff;
-							background-color: #0051a5;
+							background-color: $brand-primary-color;
 						} /* .tab-selected */
 						p {
 							margin: 0;
@@ -1618,10 +1626,10 @@ footer {
 						}
 			    	} /* last-child */
 					a {
-						color: #0051a5;
+						color: $brand-primary-color;
 						background-color: transparent;
 						display: inline-block;
-						border: 1px solid #0051a5;
+						border: 1px solid $brand-primary-color;
 						border-right: 0px;
 						font-size: 14px;
 						font-weight: normal;
@@ -1629,7 +1637,7 @@ footer {
 						&.tab-selected {
 							cursor: default;
 							color: #ffffff;
-							background-color: #0051a5;
+							background-color: $brand-primary-color;
 						} /* .tab-selected */
 						p {
 							margin: 0;
@@ -1873,8 +1881,7 @@ footer {
 
 		.drp-box {
 			position: relative;
-			/*padding: 15px;*/
-			padding-right: 56px;
+			padding-right: 140px;
 		} /* //.drp-box */
 
 		.drp-enterdata {
@@ -1903,7 +1910,7 @@ footer {
 				display: none;
 				input {
 					border: none;
-					width: 90%;
+					width: 100%;
 					font-size: 16px;
 					border-bottom: 1px solid $brand-secondary-color;
 					color: $black;
@@ -1919,7 +1926,8 @@ footer {
 			position: absolute;
 			background-color: rgba($brand-secondary-color, .1);
 			top: 0;right: 0;bottom: 0;
-			width: 15%;
+			width: 140px;
+    		padding-right: 20px;
 			&::after {
 				background: url('#{$images-icon-path}back.png') no-repeat center;
 				transform: rotate(-90deg);
@@ -1937,9 +1945,9 @@ footer {
 				@include transition(transform .45s ease);
 			} /* //::after */
 			span {
-				position: absolute;
-			    top: 20px;
-			    left: 20px;
+				display: block;
+			    padding-top: 10px;
+			    padding-left: 15px;
 			} /* span */
 		} /* //.drp-showcontent */
 
